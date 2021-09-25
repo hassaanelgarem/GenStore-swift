@@ -21,6 +21,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		8079F73226FFEB230074BBCE /* File+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F73126FFEB230074BBCE /* File+Additions.swift */; };
+		8079F73526FFEB640074BBCE /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F73426FFEB640074BBCE /* Type.swift */; };
+		8079F73726FFEB8C0074BBCE /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F73626FFEB8C0074BBCE /* Argument.swift */; };
+		8079F73926FFEC520074BBCE /* StringsStoreGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F73826FFEC520074BBCE /* StringsStoreGenerator.swift */; };
+		8079F73C26FFECAD0074BBCE /* ColorsStoreGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F73B26FFECAD0074BBCE /* ColorsStoreGenerator.swift */; };
 		8094D2B926FFE8B80088EFBE /* TestStringStoreOutput.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8094D2B626FFE8A30088EFBE /* TestStringStoreOutput.txt */; };
 		8094D2BA26FFE8B80088EFBE /* TestStringsSource.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8094D2B726FFE8A30088EFBE /* TestStringsSource.strings */; };
 		OBJ_108 /* StoreGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* StoreGeneratorTests.swift */; };
@@ -112,6 +117,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8079F73126FFEB230074BBCE /* File+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File+Additions.swift"; sourceTree = "<group>"; };
+		8079F73426FFEB640074BBCE /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		8079F73626FFEB8C0074BBCE /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
+		8079F73826FFEC520074BBCE /* StringsStoreGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsStoreGenerator.swift; sourceTree = "<group>"; };
+		8079F73B26FFECAD0074BBCE /* ColorsStoreGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsStoreGenerator.swift; sourceTree = "<group>"; };
 		8094D2B626FFE8A30088EFBE /* TestStringStoreOutput.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestStringStoreOutput.txt; sourceTree = "<group>"; };
 		8094D2B726FFE8A30088EFBE /* TestStringsSource.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = TestStringsSource.strings; sourceTree = "<group>"; };
 		"Files::Files::Product" /* Files.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Files.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +191,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8079F73326FFEB590074BBCE /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				8079F73426FFEB640074BBCE /* Type.swift */,
+				8079F73626FFEB8C0074BBCE /* Argument.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		8079F73A26FFEC850074BBCE /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				8079F73826FFEC520074BBCE /* StringsStoreGenerator.swift */,
+				8079F73B26FFECAD0074BBCE /* ColorsStoreGenerator.swift */,
+			);
+			path = Generators;
+			sourceTree = "<group>";
+		};
+		8079F73D26FFED8E0074BBCE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* Resources.swift */,
+				8079F73126FFEB230074BBCE /* File+Additions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		8094D2B526FFE8A30088EFBE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,8 +230,10 @@
 		OBJ_10 /* StoreGeneratorCore */ = {
 			isa = PBXGroup;
 			children = (
+				8079F73326FFEB590074BBCE /* Enums */,
+				8079F73A26FFEC850074BBCE /* Generators */,
+				8079F73D26FFED8E0074BBCE /* Helpers */,
 				OBJ_11 /* StoreGenerator.swift */,
-				OBJ_12 /* Resources.swift */,
 			);
 			name = StoreGeneratorCore;
 			path = Sources/StoreGeneratorCore;
@@ -537,7 +576,12 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_85 /* StoreGenerator.swift in Sources */,
+				8079F73C26FFECAD0074BBCE /* ColorsStoreGenerator.swift in Sources */,
 				OBJ_86 /* Resources.swift in Sources */,
+				8079F73926FFEC520074BBCE /* StringsStoreGenerator.swift in Sources */,
+				8079F73226FFEB230074BBCE /* File+Additions.swift in Sources */,
+				8079F73726FFEB8C0074BBCE /* Argument.swift in Sources */,
+				8079F73526FFEB640074BBCE /* Type.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

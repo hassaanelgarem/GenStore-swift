@@ -9,30 +9,11 @@ import Foundation
 import Files
 import Regex
 
-private enum Type: String {
-    case strings
-    case colors
-}
-
-public enum Argument: String {
-    case type
-    case source
-    case destination
-    
-    var shortArgument: String {
-        guard let firstLetter = self.rawValue.first else {
-            return "Invalid"
-        }
-        return String(firstLetter)
-    }
-    
-    var longArgument: String {
-        return "-\(self.rawValue)"
-    }
+protocol Generator {
+    func generateStore(sourceFilePath: String, destinationFilePath: String) throws
 }
 
 public final class StoreGenerator {
-    static let colorSetSuffix = ".colorset"
     
     public init() { }
     
@@ -40,14 +21,7 @@ public final class StoreGenerator {
         let type = try getType()
         let source = try getArgument(.source)
         let destination = try getArgument(.destination)
-        switch type {
-        case .strings:
-            try generateStringStore(sourceFilePath: source, destinationFilePath: destination)
-            break
-        case .colors:
-            try generateColorStore(sourceFilePath: source, destinationFilePath: destination)
-            break
-        }
+        try type.generator.generateStore(sourceFilePath: source, destinationFilePath: destination)
     }
     
     // MARK:- Private Functions
@@ -76,42 +50,7 @@ public final class StoreGenerator {
         }
         return value
     }
-    
-    private func generateStringStore(sourceFilePath: String, destinationFilePath: String) throws {
-        let stringsFile = try File(path: sourceFilePath)
-        let storeFile = try File.getOrCreateFile(path: destinationFilePath)
-        var strings = try stringsFile.readAsString()
-        strings = strings.replacingAll(matching: "\"(.*)\" = \"(.*)\";", with: "static let $1 = \"$1\".localized")
-        var stringStoreContent = Resources.stringTemplate
-        stringStoreContent = stringStoreContent.replacingOccurrences(of: "{data}", with: strings)
-        try storeFile.write(stringStoreContent)
-    }
-    
-    private func generateColorStore(sourceFilePath: String, destinationFilePath: String) throws {
-        let colorCases = try getColors(sourceFilePath: sourceFilePath).map({ (color) -> String in
-            return "case \(color)"
-        })
-        let string = colorCases.joined(separator: "\n\t")
-        
-        let storeFile = try File(path: destinationFilePath)
-        var storeContent = Resources.colorTemplate
-        storeContent = storeContent.replacingOccurrences(of: "{data}", with: string)
-        try storeFile.write(storeContent)
-    }
-    
-    private func getColors(sourceFilePath: String) throws -> [String] {
-        let assetsFolder = try Folder(path: sourceFilePath)
-        let colorFolders = assetsFolder.subfolders.filter { (folder) -> Bool in
-            folder.name.hasSuffix(Self.colorSetSuffix)
-        }
-        let colors = colorFolders.map { (folder) -> String in
-            return folder.name.replacingOccurrences(of: Self.colorSetSuffix, with: "")
-        }
-        return colors
-    }
 }
-
-
 
 public extension StoreGenerator {
     enum Error: Swift.Error {
@@ -127,22 +66,5 @@ public extension StoreGenerator {
                 return "Invalid type passed. Please use "
             }
         }
-    }
-}
-
-extension File {
-    func readAsString() throws -> String {
-        guard let string = try? self.readAsString(encodedAs: .utf8) else {
-            return try self.readAsString(encodedAs: .utf16)
-        }
-        return string
-    }
-    
-    static func getOrCreateFile(path: String) throws -> File {
-        let fileURL = URL(fileURLWithPath: path)
-        let fileName = fileURL.lastPathComponent
-        let parentURL = fileURL.deletingLastPathComponent()
-        let parentFolder = try Folder(path: parentURL.path)
-        return try parentFolder.createFileIfNeeded(withName: fileName)
     }
 }
