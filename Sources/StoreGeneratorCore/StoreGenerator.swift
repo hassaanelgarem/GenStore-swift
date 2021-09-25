@@ -1,5 +1,5 @@
 //
-//  HGStringStoreGenerator.swift
+//  StoreGenerator.swift
 //  Files
 //
 //  Created by Hassaan El-Garem on 6/7/20.
@@ -31,7 +31,7 @@ public enum Argument: String {
     }
 }
 
-public final class HGStringStoreGenerator {
+public final class StoreGenerator {
     static let colorSetSuffix = ".colorset"
     
     public init() { }
@@ -113,7 +113,7 @@ public final class HGStringStoreGenerator {
 
 
 
-public extension HGStringStoreGenerator {
+public extension StoreGenerator {
     enum Error: Swift.Error {
         case missingArgument(argument: Argument)
         case invalidType

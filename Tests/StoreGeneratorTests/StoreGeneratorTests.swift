@@ -1,9 +1,9 @@
 import XCTest
 import Files
 import class Foundation.Bundle
-import HGStringStoreGeneratorCore
+import StoreGeneratorCore
 
-final class HGStringStoreGeneratorTests: XCTestCase {
+final class StoreGeneratorTests: XCTestCase {
     
     var tempFolder: Folder?
     
@@ -94,7 +94,7 @@ final class HGStringStoreGeneratorTests: XCTestCase {
             return nil
         }
 
-        let fooBinary = productsDirectory.appendingPathComponent("HGStringStoreGenerator")
+        let fooBinary = productsDirectory.appendingPathComponent("StoreGenerator")
 
         let process = Process()
         process.executableURL = fooBinary

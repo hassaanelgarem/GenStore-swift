@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "HGStringStoreGenerator",
+    name: "StoreGenerator",
     dependencies: [
         .package(
             url: "https://github.com/johnsundell/files.git",
@@ -17,16 +17,16 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "HGStringStoreGenerator",
-            dependencies: ["HGStringStoreGeneratorCore"]
+            name: "StoreGenerator",
+            dependencies: ["StoreGeneratorCore"]
         ),
         .target(
-            name: "HGStringStoreGeneratorCore",
+            name: "StoreGeneratorCore",
             dependencies: ["Files", "Regex"]
         ),
         .testTarget(
-            name: "HGStringStoreGeneratorTests",
-            dependencies: ["HGStringStoreGeneratorCore"]
+            name: "StoreGeneratorTests",
+            dependencies: ["StoreGeneratorCore"]
         )
     ]
 )
