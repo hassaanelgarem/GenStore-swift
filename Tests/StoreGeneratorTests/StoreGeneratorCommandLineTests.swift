@@ -1,9 +1,8 @@
 import XCTest
 import Files
 import class Foundation.Bundle
-import StoreGeneratorCore
 
-final class StoreGeneratorTests: XCTestCase {
+final class StoreGeneratorCommandLineTests: XCTestCase {
     
     var tempFolder: Folder?
     
@@ -50,7 +49,7 @@ final class StoreGeneratorTests: XCTestCase {
         XCTAssertEqual(output, "Whoops! An error occurred: Invalid type passed. Please use \n")
     }
     
-    func testGeneratingStringsFile() throws {
+    func testGeneratingStoreFile() throws {
         // Given
         let testBundle = Bundle(for: type(of: self))
         guard let sourcePath = testBundle.path(forResource: "TestStringsSource", ofType: "strings") else {

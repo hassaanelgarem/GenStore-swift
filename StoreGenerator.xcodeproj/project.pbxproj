@@ -26,9 +26,12 @@
 		8079F73726FFEB8C0074BBCE /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F73626FFEB8C0074BBCE /* Argument.swift */; };
 		8079F73926FFEC520074BBCE /* StringsStoreGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F73826FFEC520074BBCE /* StringsStoreGenerator.swift */; };
 		8079F73C26FFECAD0074BBCE /* ColorsStoreGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F73B26FFECAD0074BBCE /* ColorsStoreGenerator.swift */; };
+		8079F73F26FFF4140074BBCE /* StringsStoreGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F73E26FFF4140074BBCE /* StringsStoreGeneratorTests.swift */; };
+		8079F74226FFF5C80074BBCE /* TestStringsEmptySource.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8079F74026FFF5390074BBCE /* TestStringsEmptySource.strings */; };
+		8079F74326FFF5C80074BBCE /* TestStringEmptyStoreOutput.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8079F74126FFF5630074BBCE /* TestStringEmptyStoreOutput.txt */; };
 		8094D2B926FFE8B80088EFBE /* TestStringStoreOutput.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8094D2B626FFE8A30088EFBE /* TestStringStoreOutput.txt */; };
 		8094D2BA26FFE8B80088EFBE /* TestStringsSource.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8094D2B726FFE8A30088EFBE /* TestStringsSource.strings */; };
-		OBJ_108 /* StoreGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* StoreGeneratorTests.swift */; };
+		OBJ_108 /* StoreGeneratorCommandLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* StoreGeneratorCommandLineTests.swift */; };
 		OBJ_110 /* StoreGeneratorCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "StoreGenerator::StoreGeneratorCore::Product" /* StoreGeneratorCore.framework */; };
 		OBJ_111 /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Regex::Regex::Product" /* Regex.framework */; };
 		OBJ_112 /* Files.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Files::Files::Product" /* Files.framework */; };
@@ -122,12 +125,15 @@
 		8079F73626FFEB8C0074BBCE /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
 		8079F73826FFEC520074BBCE /* StringsStoreGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsStoreGenerator.swift; sourceTree = "<group>"; };
 		8079F73B26FFECAD0074BBCE /* ColorsStoreGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsStoreGenerator.swift; sourceTree = "<group>"; };
+		8079F73E26FFF4140074BBCE /* StringsStoreGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsStoreGeneratorTests.swift; sourceTree = "<group>"; };
+		8079F74026FFF5390074BBCE /* TestStringsEmptySource.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = TestStringsEmptySource.strings; sourceTree = "<group>"; };
+		8079F74126FFF5630074BBCE /* TestStringEmptyStoreOutput.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestStringEmptyStoreOutput.txt; sourceTree = "<group>"; };
 		8094D2B626FFE8A30088EFBE /* TestStringStoreOutput.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestStringStoreOutput.txt; sourceTree = "<group>"; };
 		8094D2B726FFE8A30088EFBE /* TestStringsSource.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = TestStringsSource.strings; sourceTree = "<group>"; };
 		"Files::Files::Product" /* Files.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Files.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_11 /* StoreGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreGenerator.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
-		OBJ_15 /* StoreGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreGeneratorTests.swift; sourceTree = "<group>"; };
+		OBJ_15 /* StoreGeneratorCommandLineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreGeneratorCommandLineTests.swift; sourceTree = "<group>"; };
 		OBJ_19 /* Foundation+Ranges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+Ranges.swift"; sourceTree = "<group>"; };
 		OBJ_20 /* MatchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResult.swift; sourceTree = "<group>"; };
 		OBJ_21 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
@@ -223,6 +229,8 @@
 			children = (
 				8094D2B626FFE8A30088EFBE /* TestStringStoreOutput.txt */,
 				8094D2B726FFE8A30088EFBE /* TestStringsSource.strings */,
+				8079F74026FFF5390074BBCE /* TestStringsEmptySource.strings */,
+				8079F74126FFF5630074BBCE /* TestStringEmptyStoreOutput.txt */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -250,8 +258,9 @@
 		OBJ_14 /* StoreGeneratorTests */ = {
 			isa = PBXGroup;
 			children = (
+				OBJ_15 /* StoreGeneratorCommandLineTests.swift */,
 				8094D2B526FFE8A30088EFBE /* Resources */,
-				OBJ_15 /* StoreGeneratorTests.swift */,
+				8079F73E26FFF4140074BBCE /* StringsStoreGeneratorTests.swift */,
 			);
 			name = StoreGeneratorTests;
 			path = Tests/StoreGeneratorTests;
@@ -512,6 +521,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8079F74226FFF5C80074BBCE /* TestStringsEmptySource.strings in Resources */,
+				8079F74326FFF5C80074BBCE /* TestStringEmptyStoreOutput.txt in Resources */,
 				8094D2B926FFE8B80088EFBE /* TestStringStoreOutput.txt in Resources */,
 				8094D2BA26FFE8B80088EFBE /* TestStringsSource.strings in Resources */,
 			);
@@ -524,7 +535,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_108 /* StoreGeneratorTests.swift in Sources */,
+				8079F73F26FFF4140074BBCE /* StringsStoreGeneratorTests.swift in Sources */,
+				OBJ_108 /* StoreGeneratorCommandLineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
