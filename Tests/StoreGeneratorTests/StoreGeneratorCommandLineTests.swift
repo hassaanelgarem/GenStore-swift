@@ -1,6 +1,7 @@
 import XCTest
 import Files
 import class Foundation.Bundle
+@testable import StoreGeneratorCore
 
 final class StoreGeneratorCommandLineTests: XCTestCase {
     
@@ -47,6 +48,37 @@ final class StoreGeneratorCommandLineTests: XCTestCase {
 
         // Then
         XCTAssertEqual(output, "Whoops! An error occurred: Invalid type passed. Please use \n")
+    }
+    
+    func testInvalidSource() throws {
+        // Given
+        let sourcePath = "test/invalid.strings"
+        guard let destinationPath = tempFolder?.url.appendingPathComponent("output.swift").path else {
+            XCTFail("Couldn't create destination path")
+            return
+        }
+        
+        // When
+        let output = try runCommandWithArguments(["-t", "strings", "-s", sourcePath, "-d", destinationPath])
+        
+        // Then
+        XCTAssertEqual(output, "Whoops! An error occurred: invalidSourcePath\n")
+    }
+    
+    func testInvalidDestination() throws {
+        // Given
+        let testBundle = Bundle(for: type(of: self))
+        guard let sourcePath = testBundle.path(forResource: "StringsSource", ofType: "strings") else {
+            XCTFail("Couldn't find source file")
+            return
+        }
+        let destinationPath = "/invalid/test.swift"
+        
+        // When
+        let output = try runCommandWithArguments(["-t", "strings", "-s", sourcePath, "-d", destinationPath])
+        
+        // Then
+        XCTAssertEqual(output, "Whoops! An error occurred: invalidDestinationPath\n")
     }
     
     func testGeneratingStringsStoreFile() throws {

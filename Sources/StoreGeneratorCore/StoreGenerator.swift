@@ -21,7 +21,17 @@ public final class StoreGenerator {
         let type = try getType()
         let source = try getArgument(.source)
         let destination = try getArgument(.destination)
-        try type.generator.generateStore(sourceFilePath: source, destinationFilePath: destination)
+        do {
+            try type.generator.generateStore(sourceFilePath: source, destinationFilePath: destination)
+        } catch let error as Files.FilesError<LocationErrorReason> {
+            if error.path == source {
+                throw Error.invalidSourcePath
+            }
+            if destination.contains(error.path) {
+                throw Error.invalidDestinationPath
+            }
+            throw error
+        }
         print("Successfuly generated \(type.rawValue) store at the provided path!")
     }
     
@@ -57,6 +67,8 @@ public extension StoreGenerator {
     enum Error: Swift.Error {
         case missingArgument(argument: Argument)
         case invalidType
+        case invalidSourcePath
+        case invalidDestinationPath
         
         public var localizedDescription: String {
             switch self {
@@ -65,6 +77,10 @@ public extension StoreGenerator {
             case .invalidType:
                 // TODO:- Fix this
                 return "Invalid type passed. Please use "
+            case .invalidSourcePath:
+                return "invalidSourcePath"
+            case .invalidDestinationPath:
+                return "invalidDestinationPath"
             }
         }
     }
