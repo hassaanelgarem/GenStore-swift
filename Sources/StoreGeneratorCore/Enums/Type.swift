@@ -10,6 +10,7 @@ import Foundation
 enum Type: String {
     case strings
     case colors
+    case images
     
     var generator: Generator {
         switch self {
@@ -17,6 +18,8 @@ enum Type: String {
             return StringsStoreGenerator()
         case .colors:
             return ColorsStoreGenerator()
+        case .images:
+            return ImagesStoreGenerator()
         }
     }
 }

@@ -22,6 +22,7 @@ public final class StoreGenerator {
         let source = try getArgument(.source)
         let destination = try getArgument(.destination)
         try type.generator.generateStore(sourceFilePath: source, destinationFilePath: destination)
+        print("Successfuly generated \(type.rawValue) store at the provided path!")
     }
     
     // MARK:- Private Functions

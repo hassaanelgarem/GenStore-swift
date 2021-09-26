@@ -30,12 +30,16 @@
 		8079F74526FFF6A80074BBCE /* ColorsStoreGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F74426FFF6A80074BBCE /* ColorsStoreGeneratorTests.swift */; };
 		8079F74F26FFFBF20074BBCE /* StringsSource.strings in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8094D2B726FFE8A30088EFBE /* StringsSource.strings */; };
 		8079F75026FFFBF20074BBCE /* EmptyStringsSource.strings in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F74026FFF5390074BBCE /* EmptyStringsSource.strings */; };
-		8079F75126FFFBF20074BBCE /* ColorsSource.xcassets in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F74826FFF9C90074BBCE /* ColorsSource.xcassets */; };
-		8079F75F270004A80074BBCE /* EmptyColorsSource.xcassets in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F759270003850074BBCE /* EmptyColorsSource.xcassets */; };
+		8079F75126FFFBF20074BBCE /* AssetsSource.xcassets in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F74826FFF9C90074BBCE /* AssetsSource.xcassets */; };
+		8079F75F270004A80074BBCE /* EmptyAssetsSource.xcassets in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F759270003850074BBCE /* EmptyAssetsSource.xcassets */; };
 		8079F764270006A00074BBCE /* StringStoreOutput.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F760270006420074BBCE /* StringStoreOutput.txt */; };
 		8079F765270006A00074BBCE /* EmptyStringStoreOutput.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F7612700064F0074BBCE /* EmptyStringStoreOutput.txt */; };
 		8079F766270006A00074BBCE /* ColorsStoreOutput.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F7622700065B0074BBCE /* ColorsStoreOutput.txt */; };
 		8079F767270006A00074BBCE /* EmptyColorsStoreOutput.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F7632700066D0074BBCE /* EmptyColorsStoreOutput.txt */; };
+		8079F76B27000D6F0074BBCE /* ImagesStoreGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F76A27000D6F0074BBCE /* ImagesStoreGeneratorTests.swift */; };
+		8079F76D27000DB20074BBCE /* ImagesStoreGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F76C27000DB20074BBCE /* ImagesStoreGenerator.swift */; };
+		8079F770270011610074BBCE /* ImagesStoreOutput.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F76E27000E350074BBCE /* ImagesStoreOutput.txt */; };
+		8079F771270011610074BBCE /* EmptyImagesStoreOutput.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F76F27000E460074BBCE /* EmptyImagesStoreOutput.txt */; };
 		OBJ_108 /* StoreGeneratorCommandLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* StoreGeneratorCommandLineTests.swift */; };
 		OBJ_110 /* StoreGeneratorCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "StoreGenerator::StoreGeneratorCore::Product" /* StoreGeneratorCore.framework */; };
 		OBJ_111 /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Regex::Regex::Product" /* Regex.framework */; };
@@ -131,14 +135,16 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
+				8079F770270011610074BBCE /* ImagesStoreOutput.txt in CopyFiles */,
+				8079F771270011610074BBCE /* EmptyImagesStoreOutput.txt in CopyFiles */,
 				8079F764270006A00074BBCE /* StringStoreOutput.txt in CopyFiles */,
 				8079F765270006A00074BBCE /* EmptyStringStoreOutput.txt in CopyFiles */,
 				8079F766270006A00074BBCE /* ColorsStoreOutput.txt in CopyFiles */,
 				8079F767270006A00074BBCE /* EmptyColorsStoreOutput.txt in CopyFiles */,
-				8079F75F270004A80074BBCE /* EmptyColorsSource.xcassets in CopyFiles */,
+				8079F75F270004A80074BBCE /* EmptyAssetsSource.xcassets in CopyFiles */,
 				8079F74F26FFFBF20074BBCE /* StringsSource.strings in CopyFiles */,
 				8079F75026FFFBF20074BBCE /* EmptyStringsSource.strings in CopyFiles */,
-				8079F75126FFFBF20074BBCE /* ColorsSource.xcassets in CopyFiles */,
+				8079F75126FFFBF20074BBCE /* AssetsSource.xcassets in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,12 +159,16 @@
 		8079F73E26FFF4140074BBCE /* StringsStoreGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsStoreGeneratorTests.swift; sourceTree = "<group>"; };
 		8079F74026FFF5390074BBCE /* EmptyStringsSource.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = EmptyStringsSource.strings; sourceTree = "<group>"; };
 		8079F74426FFF6A80074BBCE /* ColorsStoreGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsStoreGeneratorTests.swift; sourceTree = "<group>"; };
-		8079F74826FFF9C90074BBCE /* ColorsSource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorsSource.xcassets; sourceTree = "<group>"; };
-		8079F759270003850074BBCE /* EmptyColorsSource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = EmptyColorsSource.xcassets; sourceTree = "<group>"; };
+		8079F74826FFF9C90074BBCE /* AssetsSource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssetsSource.xcassets; sourceTree = "<group>"; };
+		8079F759270003850074BBCE /* EmptyAssetsSource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = EmptyAssetsSource.xcassets; sourceTree = "<group>"; };
 		8079F760270006420074BBCE /* StringStoreOutput.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = StringStoreOutput.txt; sourceTree = "<group>"; };
 		8079F7612700064F0074BBCE /* EmptyStringStoreOutput.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = EmptyStringStoreOutput.txt; sourceTree = "<group>"; };
 		8079F7622700065B0074BBCE /* ColorsStoreOutput.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ColorsStoreOutput.txt; sourceTree = "<group>"; };
 		8079F7632700066D0074BBCE /* EmptyColorsStoreOutput.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = EmptyColorsStoreOutput.txt; sourceTree = "<group>"; };
+		8079F76A27000D6F0074BBCE /* ImagesStoreGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesStoreGeneratorTests.swift; sourceTree = "<group>"; };
+		8079F76C27000DB20074BBCE /* ImagesStoreGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesStoreGenerator.swift; sourceTree = "<group>"; };
+		8079F76E27000E350074BBCE /* ImagesStoreOutput.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ImagesStoreOutput.txt; sourceTree = "<group>"; };
+		8079F76F27000E460074BBCE /* EmptyImagesStoreOutput.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = EmptyImagesStoreOutput.txt; sourceTree = "<group>"; };
 		8094D2B726FFE8A30088EFBE /* StringsSource.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = StringsSource.strings; sourceTree = "<group>"; };
 		"Files::Files::Product" /* Files.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Files.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_11 /* StoreGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreGenerator.swift; sourceTree = "<group>"; };
@@ -241,6 +251,7 @@
 			children = (
 				8079F73826FFEC520074BBCE /* StringsStoreGenerator.swift */,
 				8079F73B26FFECAD0074BBCE /* ColorsStoreGenerator.swift */,
+				8079F76C27000DB20074BBCE /* ImagesStoreGenerator.swift */,
 			);
 			path = Generators;
 			sourceTree = "<group>";
@@ -259,8 +270,8 @@
 			children = (
 				8094D2B726FFE8A30088EFBE /* StringsSource.strings */,
 				8079F74026FFF5390074BBCE /* EmptyStringsSource.strings */,
-				8079F74826FFF9C90074BBCE /* ColorsSource.xcassets */,
-				8079F759270003850074BBCE /* EmptyColorsSource.xcassets */,
+				8079F74826FFF9C90074BBCE /* AssetsSource.xcassets */,
+				8079F759270003850074BBCE /* EmptyAssetsSource.xcassets */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -272,6 +283,8 @@
 				8079F7612700064F0074BBCE /* EmptyStringStoreOutput.txt */,
 				8079F7622700065B0074BBCE /* ColorsStoreOutput.txt */,
 				8079F7632700066D0074BBCE /* EmptyColorsStoreOutput.txt */,
+				8079F76E27000E350074BBCE /* ImagesStoreOutput.txt */,
+				8079F76F27000E460074BBCE /* EmptyImagesStoreOutput.txt */,
 			);
 			path = "Expected Outputs";
 			sourceTree = "<group>";
@@ -312,6 +325,7 @@
 				8094D2B526FFE8A30088EFBE /* Resources */,
 				8079F73E26FFF4140074BBCE /* StringsStoreGeneratorTests.swift */,
 				8079F74426FFF6A80074BBCE /* ColorsStoreGeneratorTests.swift */,
+				8079F76A27000D6F0074BBCE /* ImagesStoreGeneratorTests.swift */,
 			);
 			name = StoreGeneratorTests;
 			path = Tests/StoreGeneratorTests;
@@ -575,6 +589,7 @@
 				8079F73F26FFF4140074BBCE /* StringsStoreGeneratorTests.swift in Sources */,
 				OBJ_108 /* StoreGeneratorCommandLineTests.swift in Sources */,
 				8079F74526FFF6A80074BBCE /* ColorsStoreGeneratorTests.swift in Sources */,
+				8079F76B27000D6F0074BBCE /* ImagesStoreGeneratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,6 +647,7 @@
 				8079F73226FFEB230074BBCE /* File+Additions.swift in Sources */,
 				8079F73726FFEB8C0074BBCE /* Argument.swift in Sources */,
 				8079F73526FFEB640074BBCE /* Type.swift in Sources */,
+				8079F76D27000DB20074BBCE /* ImagesStoreGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

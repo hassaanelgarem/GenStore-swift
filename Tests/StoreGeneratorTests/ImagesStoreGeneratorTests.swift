@@ -1,5 +1,5 @@
 //
-//  ColorsStoreGeneratorTests.swift
+//  ImagesStoreGeneratorTests.swift
 //  StoreGeneratorTests
 //
 //  Created by Hassaan El-Garem on 9/26/21.
@@ -9,8 +9,7 @@ import XCTest
 import Files
 @testable import StoreGeneratorCore
 
-class ColorsStoreGeneratorTests: XCTestCase {
-
+class ImagesStoreGeneratorTests: XCTestCase {
     var tempFolder: Folder?
     
     override func setUpWithError() throws {
@@ -26,17 +25,17 @@ class ColorsStoreGeneratorTests: XCTestCase {
     
     func testGenerateStore() throws {
         // Given
-        let generator = ColorsStoreGenerator()
+        let generator = ImagesStoreGenerator()
         let testBundle = Bundle(for: type(of: self))
         guard let sourcePath = testBundle.path(forResource: "AssetsSource", ofType: "xcassets") else {
             XCTFail("Couldn't find source file")
             return
         }
-        guard let expectedOutputPath = testBundle.path(forResource: "ColorsStoreOutput", ofType: "txt") else {
+        guard let expectedOutputPath = testBundle.path(forResource: "ImagesStoreOutput", ofType: "txt") else {
             XCTFail("Couldn't find expected file")
             return
         }
-        guard let destinationPath = tempFolder?.url.appendingPathComponent("colorsOutput.swift").path else {
+        guard let destinationPath = tempFolder?.url.appendingPathComponent("imagesOutput.swift").path else {
             XCTFail("Couldn't create destination path")
             return
         }
@@ -52,17 +51,17 @@ class ColorsStoreGeneratorTests: XCTestCase {
     
     func testGenerateEmptyStore() throws {
         // Given
-        let generator = ColorsStoreGenerator()
+        let generator = ImagesStoreGenerator()
         let testBundle = Bundle(for: type(of: self))
         guard let sourcePath = testBundle.path(forResource: "EmptyAssetsSource", ofType: "xcassets") else {
             XCTFail("Couldn't find source file")
             return
         }
-        guard let expectedOutputPath = testBundle.path(forResource: "EmptyColorsStoreOutput", ofType: "txt") else {
+        guard let expectedOutputPath = testBundle.path(forResource: "EmptyImagesStoreOutput", ofType: "txt") else {
             XCTFail("Couldn't find expected file")
             return
         }
-        guard let destinationPath = tempFolder?.url.appendingPathComponent("colorsOutput.swift").path else {
+        guard let destinationPath = tempFolder?.url.appendingPathComponent("imagesOutput.swift").path else {
             XCTFail("Couldn't create destination path")
             return
         }
@@ -75,5 +74,4 @@ class ColorsStoreGeneratorTests: XCTestCase {
         let actualString = try File(path: destinationPath).readAsString(encodedAs: .utf8)
         XCTAssertEqual(actualString, expectedString)
     }
-
 }
