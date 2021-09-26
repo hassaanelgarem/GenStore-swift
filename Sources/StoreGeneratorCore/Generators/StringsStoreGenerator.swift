@@ -14,6 +14,7 @@ class StringsStoreGenerator: Generator {
         let storeFile = try File.getOrCreateFile(path: destinationFilePath)
         var strings = try stringsFile.readAsString()
         strings = strings.replacingAll(matching: "\"(.*)\" = \"(.*)\";", with: "static let $1 = \"$1\".localized")
+        strings = strings.replacingAll(matching: "(.+)\n", with: "\t$0")
         var stringStoreContent = Resources.stringTemplate
         stringStoreContent = stringStoreContent.replacingOccurrences(of: "{data}", with: strings)
         try storeFile.write(stringStoreContent)

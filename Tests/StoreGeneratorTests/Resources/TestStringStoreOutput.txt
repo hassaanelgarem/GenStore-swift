@@ -4,15 +4,15 @@ import Foundation
 
 class StringsStore {
 
-// MARK: Section One
+\t// MARK: Section One
 
-static let key1 = "key1".localized
-static let key2 = "key2".localized
+\tstatic let key1 = "key1".localized
+\tstatic let key2 = "key2".localized
 
-// MARK: Section Two
+\t// MARK: Section Two
 
-static let key3 = "key3".localized
-static let key4 = "key4".localized
+\tstatic let key3 = "key3".localized
+\tstatic let key4 = "key4".localized
 
 }
 

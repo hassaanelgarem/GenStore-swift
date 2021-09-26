@@ -70,7 +70,7 @@ final class StoreGeneratorTests: XCTestCase {
         let _ = try runCommandWithArguments(["-t", "strings", "-s", sourcePath, "-d", destinationPath])
         
         // Then
-        let expectedString = try File(path: expectedOutputPath).readAsString(encodedAs: .utf8)
+        let expectedString = try File(path: expectedOutputPath).readAsString(encodedAs: .utf8).replacingOccurrences(of: "\\t", with: "\t")
         let actualString = try File(path: destinationPath).readAsString(encodedAs: .utf8)
         XCTAssertEqual(actualString, expectedString)
     }
