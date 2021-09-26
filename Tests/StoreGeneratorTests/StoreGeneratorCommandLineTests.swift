@@ -52,11 +52,11 @@ final class StoreGeneratorCommandLineTests: XCTestCase {
     func testGeneratingStoreFile() throws {
         // Given
         let testBundle = Bundle(for: type(of: self))
-        guard let sourcePath = testBundle.path(forResource: "TestStringsSource", ofType: "strings") else {
+        guard let sourcePath = testBundle.path(forResource: "StringsSource", ofType: "strings") else {
             XCTFail("Couldn't find source file")
             return
         }
-        guard let expectedOutputPath = testBundle.path(forResource: "TestStringStoreOutput", ofType: "txt") else {
+        guard let expectedOutputPath = testBundle.path(forResource: "StringStoreOutput", ofType: "txt") else {
             XCTFail("Couldn't find expected file")
             return
         }

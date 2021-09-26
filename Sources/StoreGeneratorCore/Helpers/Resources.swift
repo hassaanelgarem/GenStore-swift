@@ -30,13 +30,10 @@ fileprivate extension String {
 import Foundation
 import UIKit
 
-enum Color: String {
-    {data}
-    
-    var color: UIColor {
-        return Self.unwrappedColor(named: self.rawValue)
-    }
-    
+class ColorsStore {
+
+{data}
+
     static func unwrappedColor(named name: String) -> UIColor {
         guard let color = UIColor(named: name) else {
             print("[ERROR] - Color with name (\\"\\(name)\\") not found in assets cataloug")

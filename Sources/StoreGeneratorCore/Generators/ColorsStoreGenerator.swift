@@ -13,12 +13,12 @@ class ColorsStoreGenerator: Generator {
     static let colorSetSuffix = ".colorset"
     
     func generateStore(sourceFilePath: String, destinationFilePath: String) throws {
-        let colorCases = try getColors(sourceFilePath: sourceFilePath).map({ (color) -> String in
-            return "case \(color)"
+        let colorVariables = try getColors(sourceFilePath: sourceFilePath).map({ (color) -> String in
+            return "\tstatic let \(color): UIColor = Self.unwrappedColor(named: \"\(color)\")"
         })
-        let string = colorCases.joined(separator: "\n\t")
+        let string = colorVariables.joined(separator: "\n")
         
-        let storeFile = try File(path: destinationFilePath)
+        let storeFile = try File.getOrCreateFile(path: destinationFilePath)
         var storeContent = Resources.colorTemplate
         storeContent = storeContent.replacingOccurrences(of: "{data}", with: string)
         try storeFile.write(storeContent)

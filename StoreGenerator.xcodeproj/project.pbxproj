@@ -27,10 +27,15 @@
 		8079F73926FFEC520074BBCE /* StringsStoreGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F73826FFEC520074BBCE /* StringsStoreGenerator.swift */; };
 		8079F73C26FFECAD0074BBCE /* ColorsStoreGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F73B26FFECAD0074BBCE /* ColorsStoreGenerator.swift */; };
 		8079F73F26FFF4140074BBCE /* StringsStoreGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F73E26FFF4140074BBCE /* StringsStoreGeneratorTests.swift */; };
-		8079F74226FFF5C80074BBCE /* TestStringsEmptySource.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8079F74026FFF5390074BBCE /* TestStringsEmptySource.strings */; };
-		8079F74326FFF5C80074BBCE /* TestStringEmptyStoreOutput.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8079F74126FFF5630074BBCE /* TestStringEmptyStoreOutput.txt */; };
-		8094D2B926FFE8B80088EFBE /* TestStringStoreOutput.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8094D2B626FFE8A30088EFBE /* TestStringStoreOutput.txt */; };
-		8094D2BA26FFE8B80088EFBE /* TestStringsSource.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8094D2B726FFE8A30088EFBE /* TestStringsSource.strings */; };
+		8079F74526FFF6A80074BBCE /* ColorsStoreGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F74426FFF6A80074BBCE /* ColorsStoreGeneratorTests.swift */; };
+		8079F74F26FFFBF20074BBCE /* StringsSource.strings in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8094D2B726FFE8A30088EFBE /* StringsSource.strings */; };
+		8079F75026FFFBF20074BBCE /* EmptyStringsSource.strings in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F74026FFF5390074BBCE /* EmptyStringsSource.strings */; };
+		8079F75126FFFBF20074BBCE /* ColorsSource.xcassets in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F74826FFF9C90074BBCE /* ColorsSource.xcassets */; };
+		8079F75F270004A80074BBCE /* EmptyColorsSource.xcassets in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F759270003850074BBCE /* EmptyColorsSource.xcassets */; };
+		8079F764270006A00074BBCE /* StringStoreOutput.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F760270006420074BBCE /* StringStoreOutput.txt */; };
+		8079F765270006A00074BBCE /* EmptyStringStoreOutput.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F7612700064F0074BBCE /* EmptyStringStoreOutput.txt */; };
+		8079F766270006A00074BBCE /* ColorsStoreOutput.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F7622700065B0074BBCE /* ColorsStoreOutput.txt */; };
+		8079F767270006A00074BBCE /* EmptyColorsStoreOutput.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8079F7632700066D0074BBCE /* EmptyColorsStoreOutput.txt */; };
 		OBJ_108 /* StoreGeneratorCommandLineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* StoreGeneratorCommandLineTests.swift */; };
 		OBJ_110 /* StoreGeneratorCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "StoreGenerator::StoreGeneratorCore::Product" /* StoreGeneratorCore.framework */; };
 		OBJ_111 /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Regex::Regex::Product" /* Regex.framework */; };
@@ -119,6 +124,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8079F74B26FFFBD90074BBCE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				8079F764270006A00074BBCE /* StringStoreOutput.txt in CopyFiles */,
+				8079F765270006A00074BBCE /* EmptyStringStoreOutput.txt in CopyFiles */,
+				8079F766270006A00074BBCE /* ColorsStoreOutput.txt in CopyFiles */,
+				8079F767270006A00074BBCE /* EmptyColorsStoreOutput.txt in CopyFiles */,
+				8079F75F270004A80074BBCE /* EmptyColorsSource.xcassets in CopyFiles */,
+				8079F74F26FFFBF20074BBCE /* StringsSource.strings in CopyFiles */,
+				8079F75026FFFBF20074BBCE /* EmptyStringsSource.strings in CopyFiles */,
+				8079F75126FFFBF20074BBCE /* ColorsSource.xcassets in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8079F73126FFEB230074BBCE /* File+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File+Additions.swift"; sourceTree = "<group>"; };
 		8079F73426FFEB640074BBCE /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
@@ -126,10 +151,15 @@
 		8079F73826FFEC520074BBCE /* StringsStoreGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsStoreGenerator.swift; sourceTree = "<group>"; };
 		8079F73B26FFECAD0074BBCE /* ColorsStoreGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsStoreGenerator.swift; sourceTree = "<group>"; };
 		8079F73E26FFF4140074BBCE /* StringsStoreGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsStoreGeneratorTests.swift; sourceTree = "<group>"; };
-		8079F74026FFF5390074BBCE /* TestStringsEmptySource.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = TestStringsEmptySource.strings; sourceTree = "<group>"; };
-		8079F74126FFF5630074BBCE /* TestStringEmptyStoreOutput.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestStringEmptyStoreOutput.txt; sourceTree = "<group>"; };
-		8094D2B626FFE8A30088EFBE /* TestStringStoreOutput.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestStringStoreOutput.txt; sourceTree = "<group>"; };
-		8094D2B726FFE8A30088EFBE /* TestStringsSource.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = TestStringsSource.strings; sourceTree = "<group>"; };
+		8079F74026FFF5390074BBCE /* EmptyStringsSource.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = EmptyStringsSource.strings; sourceTree = "<group>"; };
+		8079F74426FFF6A80074BBCE /* ColorsStoreGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsStoreGeneratorTests.swift; sourceTree = "<group>"; };
+		8079F74826FFF9C90074BBCE /* ColorsSource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ColorsSource.xcassets; sourceTree = "<group>"; };
+		8079F759270003850074BBCE /* EmptyColorsSource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = EmptyColorsSource.xcassets; sourceTree = "<group>"; };
+		8079F760270006420074BBCE /* StringStoreOutput.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = StringStoreOutput.txt; sourceTree = "<group>"; };
+		8079F7612700064F0074BBCE /* EmptyStringStoreOutput.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = EmptyStringStoreOutput.txt; sourceTree = "<group>"; };
+		8079F7622700065B0074BBCE /* ColorsStoreOutput.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ColorsStoreOutput.txt; sourceTree = "<group>"; };
+		8079F7632700066D0074BBCE /* EmptyColorsStoreOutput.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = EmptyColorsStoreOutput.txt; sourceTree = "<group>"; };
+		8094D2B726FFE8A30088EFBE /* StringsSource.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = StringsSource.strings; sourceTree = "<group>"; };
 		"Files::Files::Product" /* Files.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Files.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_11 /* StoreGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreGenerator.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
@@ -224,13 +254,33 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		8079F74626FFF93F0074BBCE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8094D2B726FFE8A30088EFBE /* StringsSource.strings */,
+				8079F74026FFF5390074BBCE /* EmptyStringsSource.strings */,
+				8079F74826FFF9C90074BBCE /* ColorsSource.xcassets */,
+				8079F759270003850074BBCE /* EmptyColorsSource.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8079F74726FFF94D0074BBCE /* Expected Outputs */ = {
+			isa = PBXGroup;
+			children = (
+				8079F760270006420074BBCE /* StringStoreOutput.txt */,
+				8079F7612700064F0074BBCE /* EmptyStringStoreOutput.txt */,
+				8079F7622700065B0074BBCE /* ColorsStoreOutput.txt */,
+				8079F7632700066D0074BBCE /* EmptyColorsStoreOutput.txt */,
+			);
+			path = "Expected Outputs";
+			sourceTree = "<group>";
+		};
 		8094D2B526FFE8A30088EFBE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				8094D2B626FFE8A30088EFBE /* TestStringStoreOutput.txt */,
-				8094D2B726FFE8A30088EFBE /* TestStringsSource.strings */,
-				8079F74026FFF5390074BBCE /* TestStringsEmptySource.strings */,
-				8079F74126FFF5630074BBCE /* TestStringEmptyStoreOutput.txt */,
+				8079F74726FFF94D0074BBCE /* Expected Outputs */,
+				8079F74626FFF93F0074BBCE /* Sources */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -261,6 +311,7 @@
 				OBJ_15 /* StoreGeneratorCommandLineTests.swift */,
 				8094D2B526FFE8A30088EFBE /* Resources */,
 				8079F73E26FFF4140074BBCE /* StringsStoreGeneratorTests.swift */,
+				8079F74426FFF6A80074BBCE /* ColorsStoreGeneratorTests.swift */,
 			);
 			name = StoreGeneratorTests;
 			path = Tests/StoreGeneratorTests;
@@ -454,7 +505,7 @@
 			buildPhases = (
 				OBJ_107 /* Sources */,
 				OBJ_109 /* Frameworks */,
-				8094D2B826FFE8B00088EFBE /* Resources */,
+				8079F74B26FFFBD90074BBCE /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -516,20 +567,6 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		8094D2B826FFE8B00088EFBE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8079F74226FFF5C80074BBCE /* TestStringsEmptySource.strings in Resources */,
-				8079F74326FFF5C80074BBCE /* TestStringEmptyStoreOutput.txt in Resources */,
-				8094D2B926FFE8B80088EFBE /* TestStringStoreOutput.txt in Resources */,
-				8094D2BA26FFE8B80088EFBE /* TestStringsSource.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		OBJ_107 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -537,6 +574,7 @@
 			files = (
 				8079F73F26FFF4140074BBCE /* StringsStoreGeneratorTests.swift in Sources */,
 				OBJ_108 /* StoreGeneratorCommandLineTests.swift in Sources */,
+				8079F74526FFF6A80074BBCE /* ColorsStoreGeneratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
