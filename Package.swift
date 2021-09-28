@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "StoreGenerator",
+    products: [
+        .executable(name: "gen-store", targets: ["StoreGenerator"]),
+    ],
     dependencies: [
         .package(
             url: "https://github.com/johnsundell/files.git",
