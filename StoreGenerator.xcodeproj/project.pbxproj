@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		804215E027029F64007D6BFF /* TypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804215DF27029F64007D6BFF /* TypeTests.swift */; };
+		804215E22702A24E007D6BFF /* ArgumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804215E12702A24E007D6BFF /* ArgumentTests.swift */; };
 		8079F73226FFEB230074BBCE /* File+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F73126FFEB230074BBCE /* File+Additions.swift */; };
 		8079F73526FFEB640074BBCE /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F73426FFEB640074BBCE /* Type.swift */; };
 		8079F73726FFEB8C0074BBCE /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8079F73626FFEB8C0074BBCE /* Argument.swift */; };
@@ -151,6 +153,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		804215DF27029F64007D6BFF /* TypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTests.swift; sourceTree = "<group>"; };
+		804215E12702A24E007D6BFF /* ArgumentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentTests.swift; sourceTree = "<group>"; };
 		8079F73126FFEB230074BBCE /* File+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File+Additions.swift"; sourceTree = "<group>"; };
 		8079F73426FFEB640074BBCE /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		8079F73626FFEB8C0074BBCE /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
@@ -326,6 +330,8 @@
 				8079F73E26FFF4140074BBCE /* StringsStoreGeneratorTests.swift */,
 				8079F74426FFF6A80074BBCE /* ColorsStoreGeneratorTests.swift */,
 				8079F76A27000D6F0074BBCE /* ImagesStoreGeneratorTests.swift */,
+				804215DF27029F64007D6BFF /* TypeTests.swift */,
+				804215E12702A24E007D6BFF /* ArgumentTests.swift */,
 			);
 			name = StoreGeneratorTests;
 			path = Tests/StoreGeneratorTests;
@@ -586,7 +592,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				804215E027029F64007D6BFF /* TypeTests.swift in Sources */,
 				8079F73F26FFF4140074BBCE /* StringsStoreGeneratorTests.swift in Sources */,
+				804215E22702A24E007D6BFF /* ArgumentTests.swift in Sources */,
 				OBJ_108 /* StoreGeneratorCommandLineTests.swift in Sources */,
 				8079F74526FFF6A80074BBCE /* ColorsStoreGeneratorTests.swift in Sources */,
 				8079F76B27000D6F0074BBCE /* ImagesStoreGeneratorTests.swift in Sources */,

@@ -6,9 +6,9 @@ do {
     try tool.run()
 }
 catch let error as StoreGenerator.Error {
-    print("Whoops! An error occurred: \(error.localizedDescription)")
+    print("An error occurred!\n\(error.localizedDescription)")
 }
 
 catch {
-    print("Whoops! An error occurred: \(error)")
+    print("An error occurred: \(error)")
 }

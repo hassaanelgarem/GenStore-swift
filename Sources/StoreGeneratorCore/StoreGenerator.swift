@@ -10,7 +10,7 @@ import Files
 import Regex
 
 protocol Generator {
-    func generateStore(sourceFilePath: String, destinationFilePath: String) throws
+    func generateStore(sourceFilePath: String, outputFilePath: String) throws
 }
 
 public final class StoreGenerator {
@@ -20,15 +20,15 @@ public final class StoreGenerator {
     public func run() throws {
         let type = try getType()
         let source = try getArgument(.source)
-        let destination = try getArgument(.destination)
+        let output = try getArgument(.output)
         do {
-            try type.generator.generateStore(sourceFilePath: source, destinationFilePath: destination)
+            try type.generator.generateStore(sourceFilePath: source, outputFilePath: output)
         } catch let error as Files.FilesError<LocationErrorReason> {
             if error.path == source {
                 throw Error.invalidSourcePath
             }
-            if destination.contains(error.path) {
-                throw Error.invalidDestinationPath
+            if output.contains(error.path) {
+                throw Error.invalidOutputPath
             }
             throw error
         }
@@ -68,19 +68,18 @@ public extension StoreGenerator {
         case missingArgument(argument: Argument)
         case invalidType
         case invalidSourcePath
-        case invalidDestinationPath
+        case invalidOutputPath
         
         public var localizedDescription: String {
             switch self {
             case .missingArgument(argument: let argument):
-                return "Missing argument: \(argument.rawValue)"
+                return "The following argument is missing: \(argument.rawValue)\nUse -\(argument.shortArgument) or -\(argument.longArgument) to pass it"
             case .invalidType:
-                // TODO:- Fix this
-                return "Invalid type passed. Please use "
+                return "The type passed is invalid\nChoose one of the following supported types:\(Type.allTypesString)"
             case .invalidSourcePath:
-                return "invalidSourcePath"
-            case .invalidDestinationPath:
-                return "invalidDestinationPath"
+                return "Could not find a valid source at the provided path"
+            case .invalidOutputPath:
+                return "Could not create or find the output file"
             }
         }
     }
