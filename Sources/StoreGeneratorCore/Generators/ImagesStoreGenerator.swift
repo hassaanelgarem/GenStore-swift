@@ -12,7 +12,7 @@ class ImagesStoreGenerator: Generator {
     
     static let imageSetSuffix = ".imageset"
     
-    func generateStore(sourceFilePath: String, destinationFilePath: String) throws {
+    func generateStore(sourceFilePath: String, outputFilePath: String) throws {
         let imageVariables = try getImages(sourceFilePath: sourceFilePath).map({ (imageName) -> String in
             return """
             \tstatic var \(imageName): UIImage? {
@@ -22,7 +22,7 @@ class ImagesStoreGenerator: Generator {
         })
         let string = imageVariables.joined(separator: "\n\n")
         
-        let storeFile = try File.getOrCreateFile(path: destinationFilePath)
+        let storeFile = try File.getOrCreateFile(path: outputFilePath)
         var storeContent = Resources.imagesTemplate
         storeContent = storeContent.replacingOccurrences(of: "{data}", with: string)
         try storeFile.write(storeContent)

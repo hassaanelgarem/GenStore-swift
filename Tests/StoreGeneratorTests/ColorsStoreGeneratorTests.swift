@@ -36,17 +36,17 @@ class ColorsStoreGeneratorTests: XCTestCase {
             XCTFail("Couldn't find expected file")
             return
         }
-        guard let destinationPath = tempFolder?.url.appendingPathComponent("colorsOutput.swift").path else {
-            XCTFail("Couldn't create destination path")
+        guard let outputPath = tempFolder?.url.appendingPathComponent("colorsOutput.swift").path else {
+            XCTFail("Couldn't create output path")
             return
         }
         
         // When
-        try generator.generateStore(sourceFilePath: sourcePath, destinationFilePath: destinationPath)
+        try generator.generateStore(sourceFilePath: sourcePath, outputFilePath: outputPath)
         
         // Then
         let expectedString = try File(path: expectedOutputPath).readAsString(encodedAs: .utf8).replacingOccurrences(of: "\\t", with: "\t")
-        let actualString = try File(path: destinationPath).readAsString(encodedAs: .utf8)
+        let actualString = try File(path: outputPath).readAsString(encodedAs: .utf8)
         XCTAssertEqual(actualString, expectedString)
     }
     
@@ -62,17 +62,17 @@ class ColorsStoreGeneratorTests: XCTestCase {
             XCTFail("Couldn't find expected file")
             return
         }
-        guard let destinationPath = tempFolder?.url.appendingPathComponent("colorsOutput.swift").path else {
-            XCTFail("Couldn't create destination path")
+        guard let outputPath = tempFolder?.url.appendingPathComponent("colorsOutput.swift").path else {
+            XCTFail("Couldn't create output path")
             return
         }
         
         // When
-        try generator.generateStore(sourceFilePath: sourcePath, destinationFilePath: destinationPath)
+        try generator.generateStore(sourceFilePath: sourcePath, outputFilePath: outputPath)
         
         // Then
         let expectedString = try File(path: expectedOutputPath).readAsString(encodedAs: .utf8).replacingOccurrences(of: "\\t", with: "\t")
-        let actualString = try File(path: destinationPath).readAsString(encodedAs: .utf8)
+        let actualString = try File(path: outputPath).readAsString(encodedAs: .utf8)
         XCTAssertEqual(actualString, expectedString)
     }
 
