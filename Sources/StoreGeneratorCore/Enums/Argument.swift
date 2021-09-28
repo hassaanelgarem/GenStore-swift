@@ -10,7 +10,7 @@ import Foundation
 public enum Argument: String {
     case type
     case source
-    case destination
+    case output
     
     var shortArgument: String {
         guard let firstLetter = self.rawValue.first else {
