@@ -13,6 +13,10 @@ let package = Package(
         .package(
             url: "https://github.com/sharplet/Regex.git",
             from: "2.1.0"
+        ),
+        .package(
+            url: "https://github.com/apple/swift-argument-parser",
+            from: "1.0.1"
         )
     ],
     targets: [
@@ -22,7 +26,7 @@ let package = Package(
         ),
         .target(
             name: "StoreGeneratorCore",
-            dependencies: ["Files", "Regex"]
+            dependencies: ["Files", "Regex", "ArgumentParser"]
         ),
         .testTarget(
             name: "StoreGeneratorTests",
