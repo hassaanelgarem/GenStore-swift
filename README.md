@@ -9,7 +9,7 @@ Using String-based APIs to access your resources has many drawbacks. There's alw
 ### Using [Mint](https://github.com/yonaskolb/Mint)
 
 ```shell
-$ mint install hassaanelgarem/swift-store-generator
+$ mint install hassaanelgarem/GenStore-swift
 ```
 
 ### From Source
