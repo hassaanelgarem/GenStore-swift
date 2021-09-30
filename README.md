@@ -1,6 +1,6 @@
-# GenStoreSwift
+# GenStore
 
-GenStoreSwift is a lightweight swift code generator for your resources. GenStoreSwift can create classes for your images, colors and localized strings.
+GenStore is a lightweight swift code generator for your resources. GenStore can create classes for your images, colors and localized strings.
 
 Using String-based APIs to access your resources has many drawbacks. There's always the risk of typos, as well as using resources that are no longer there. Auto generating code from resources and using it ensures that all the drawbacks from using String-based APIs will simply cease to exist as they will be automatically caught while compiling. You will also have the benefit of auto-completion which is always cool.
 
@@ -152,7 +152,7 @@ let theOne = ImagesStore.chairModel
 
 ## Xcode Integration
 
-To make the best out of GenStoreSwift, you should integrate it in your Xcode project by adding it as a "Run Script Build Phase". By doing so, this will generate your classes every time you build your project, which will make sure that your generated classes are always up to date.
+To make the best out of GenStore, you should integrate it in your Xcode project by adding it as a "Run Script Build Phase". By doing so, this will generate your classes every time you build your project, which will make sure that your generated classes are always up to date.
 
 Adding a new script phase:
 
@@ -161,7 +161,7 @@ Adding a new script phase:
 3. Select "Build Phases" tab
 4. Click on the "+" button to add a new phase then select "New Run Script Phase"
 5. Name the new phase whatever you want
-6. Fill in the script the same way you would use GenStoreSwift in the terminal. You can make use of environment variables to make the script work on any machine. Your script can look something like this:
+6. Fill in the script the same way you would use GenStore in the terminal. You can make use of environment variables to make the script work on any machine. Your script can look something like this:
     
     ```shell
     gen-store -t strings -s $SRCROOT/Example/Storyboards/en.lproj/Localizable.strings -o $SRCROOT/Example/Stores/StringsStore.swift
@@ -172,8 +172,8 @@ Adding a new script phase:
 
 ## Alternatives
 
-If GenStoreSwift doesn't meet your needs try [SwiftGen](https://github.com/SwiftGen/SwiftGen) which is a great alternative.
+If GenStore doesn't meet your needs try [SwiftGen](https://github.com/SwiftGen/SwiftGen) which is a great alternative.
 
 ## License
 
-GenStoreSwift is licensed under the MIT license. See [LICENSE](LICENSE) for more info.
+GenStore is licensed under the MIT license. See [LICENSE](LICENSE) for more info.

@@ -4,9 +4,9 @@
 import PackageDescription
 
 let package = Package(
-    name: "StoreGenerator",
+    name: "GenStore",
     products: [
-        .executable(name: "gen-store", targets: ["StoreGenerator"]),
+        .executable(name: "gen-store", targets: ["GenStore"]),
     ],
     dependencies: [
         .package(
@@ -24,16 +24,16 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "StoreGenerator",
-            dependencies: ["StoreGeneratorCore"]
+            name: "GenStore",
+            dependencies: ["GenStoreCore"]
         ),
         .target(
-            name: "StoreGeneratorCore",
+            name: "GenStoreCore",
             dependencies: ["Files", "Regex", "ArgumentParser"]
         ),
         .testTarget(
-            name: "StoreGeneratorTests",
-            dependencies: ["StoreGeneratorCore"]
+            name: "GenStoreTests",
+            dependencies: ["GenStoreCore"]
         )
     ]
 )

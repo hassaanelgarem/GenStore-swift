@@ -1,0 +1,3 @@
+import GenStoreCore
+
+GenStoreCommand.main()

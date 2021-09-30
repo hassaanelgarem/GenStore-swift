@@ -1,3 +1,0 @@
-import StoreGeneratorCore
-
-GenerateStoreCommand.main()

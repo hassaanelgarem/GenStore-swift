@@ -1,0 +1,1856 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"GenStore::GenStorePackageTests::ProductTarget" /* GenStorePackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_218 /* Build configuration list for PBXAggregateTarget "GenStorePackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_221 /* PBXTargetDependency */,
+			);
+			name = GenStorePackageTests;
+			productName = GenStorePackageTests;
+		};
+		"GenStore::gen-store::ProductTarget" /* gen-store */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_262 /* Build configuration list for PBXAggregateTarget "gen-store" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_265 /* PBXTargetDependency */,
+			);
+			name = "gen-store";
+			productName = "gen-store";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		80C03DF8270568EB005AC4DF /* ColorsStoreOutput.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80C03DED270568DD005AC4DF /* ColorsStoreOutput.txt */; };
+		80C03DF9270568EB005AC4DF /* EmptyStringStoreOutput.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80C03DEE270568DD005AC4DF /* EmptyStringStoreOutput.txt */; };
+		80C03DFA270568EB005AC4DF /* ImagesStoreOutput.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80C03DEF270568DD005AC4DF /* ImagesStoreOutput.txt */; };
+		80C03DFB270568EB005AC4DF /* EmptyImagesStoreOutput.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80C03DF0270568DD005AC4DF /* EmptyImagesStoreOutput.txt */; };
+		80C03DFC270568EB005AC4DF /* EmptyColorsStoreOutput.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80C03DF1270568DD005AC4DF /* EmptyColorsStoreOutput.txt */; };
+		80C03DFD270568EB005AC4DF /* StringStoreOutput.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80C03DF2270568DD005AC4DF /* StringStoreOutput.txt */; };
+		80C03DFE270568EB005AC4DF /* EmptyStringsSource.strings in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80C03DF4270568DD005AC4DF /* EmptyStringsSource.strings */; };
+		80C03DFF270568EB005AC4DF /* EmptyAssetsSource.xcassets in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80C03DF5270568DD005AC4DF /* EmptyAssetsSource.xcassets */; };
+		80C03E00270568EB005AC4DF /* AssetsSource.xcassets in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80C03DF6270568DD005AC4DF /* AssetsSource.xcassets */; };
+		80C03E01270568EB005AC4DF /* StringsSource.strings in CopyFiles */ = {isa = PBXBuildFile; fileRef = 80C03DF7270568DD005AC4DF /* StringsSource.strings */; };
+		80C03E0227056906005AC4DF /* GenStoreCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* GenStoreCommand.swift */; };
+		OBJ_109 /* BashCompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* BashCompletionsGenerator.swift */; };
+		OBJ_110 /* CompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* CompletionsGenerator.swift */; };
+		OBJ_111 /* FishCompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* FishCompletionsGenerator.swift */; };
+		OBJ_112 /* ZshCompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* ZshCompletionsGenerator.swift */; };
+		OBJ_113 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Argument.swift */; };
+		OBJ_114 /* ArgumentHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* ArgumentHelp.swift */; };
+		OBJ_115 /* CompletionKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* CompletionKind.swift */; };
+		OBJ_116 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Errors.swift */; };
+		OBJ_117 /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Flag.swift */; };
+		OBJ_118 /* NameSpecification.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* NameSpecification.swift */; };
+		OBJ_119 /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Option.swift */; };
+		OBJ_120 /* OptionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* OptionGroup.swift */; };
+		OBJ_121 /* CommandConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* CommandConfiguration.swift */; };
+		OBJ_122 /* EnumerableFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* EnumerableFlag.swift */; };
+		OBJ_123 /* ExpressibleByArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* ExpressibleByArgument.swift */; };
+		OBJ_124 /* ParsableArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* ParsableArguments.swift */; };
+		OBJ_125 /* ParsableArgumentsValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* ParsableArgumentsValidation.swift */; };
+		OBJ_126 /* ParsableCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* ParsableCommand.swift */; };
+		OBJ_127 /* ArgumentDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* ArgumentDecoder.swift */; };
+		OBJ_128 /* ArgumentDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* ArgumentDefinition.swift */; };
+		OBJ_129 /* ArgumentSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* ArgumentSet.swift */; };
+		OBJ_130 /* CommandParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* CommandParser.swift */; };
+		OBJ_131 /* InputOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* InputOrigin.swift */; };
+		OBJ_132 /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* Name.swift */; };
+		OBJ_133 /* Parsed.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* Parsed.swift */; };
+		OBJ_134 /* ParsedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* ParsedValues.swift */; };
+		OBJ_135 /* ParserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* ParserError.swift */; };
+		OBJ_136 /* SplitArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* SplitArguments.swift */; };
+		OBJ_137 /* DumpHelpGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* DumpHelpGenerator.swift */; };
+		OBJ_138 /* HelpCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* HelpCommand.swift */; };
+		OBJ_139 /* HelpGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* HelpGenerator.swift */; };
+		OBJ_140 /* MessageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* MessageInfo.swift */; };
+		OBJ_141 /* UsageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* UsageGenerator.swift */; };
+		OBJ_142 /* CollectionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* CollectionExtensions.swift */; };
+		OBJ_143 /* SequenceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* SequenceExtensions.swift */; };
+		OBJ_144 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* StringExtensions.swift */; };
+		OBJ_145 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* Tree.swift */; };
+		OBJ_147 /* ArgumentParserToolInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParserToolInfo::Product" /* ArgumentParserToolInfo.framework */; };
+		OBJ_154 /* ToolInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* ToolInfo.swift */; };
+		OBJ_161 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_92 /* Files.swift */; };
+		OBJ_168 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* Package.swift */; };
+		OBJ_174 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* main.swift */; };
+		OBJ_176 /* GenStoreCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "GenStore::GenStoreCore::Product" /* GenStoreCore.framework */; };
+		OBJ_177 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
+		OBJ_178 /* ArgumentParserToolInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParserToolInfo::Product" /* ArgumentParserToolInfo.framework */; };
+		OBJ_179 /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Regex::Regex::Product" /* Regex.framework */; };
+		OBJ_180 /* Files.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Files::Files::Product" /* Files.framework */; };
+		OBJ_192 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Argument.swift */; };
+		OBJ_193 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Type.swift */; };
+		OBJ_195 /* ColorsStoreGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* ColorsStoreGenerator.swift */; };
+		OBJ_196 /* ImagesStoreGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* ImagesStoreGenerator.swift */; };
+		OBJ_197 /* StoreGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* StoreGenerator.swift */; };
+		OBJ_198 /* StringsStoreGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* StringsStoreGenerator.swift */; };
+		OBJ_199 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Constants.swift */; };
+		OBJ_200 /* File+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* File+Additions.swift */; };
+		OBJ_201 /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Resources.swift */; };
+		OBJ_203 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
+		OBJ_204 /* ArgumentParserToolInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParserToolInfo::Product" /* ArgumentParserToolInfo.framework */; };
+		OBJ_205 /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Regex::Regex::Product" /* Regex.framework */; };
+		OBJ_206 /* Files.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Files::Files::Product" /* Files.framework */; };
+		OBJ_216 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_227 /* ArgumentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* ArgumentTests.swift */; };
+		OBJ_228 /* ColorsStoreGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* ColorsStoreGeneratorTests.swift */; };
+		OBJ_229 /* ImagesStoreGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* ImagesStoreGeneratorTests.swift */; };
+		OBJ_230 /* StoreGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* StoreGeneratorTests.swift */; };
+		OBJ_231 /* StringsStoreGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* StringsStoreGeneratorTests.swift */; };
+		OBJ_232 /* TypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* TypeTests.swift */; };
+		OBJ_234 /* GenStoreCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "GenStore::GenStoreCore::Product" /* GenStoreCore.framework */; };
+		OBJ_235 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
+		OBJ_236 /* ArgumentParserToolInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParserToolInfo::Product" /* ArgumentParserToolInfo.framework */; };
+		OBJ_237 /* Regex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Regex::Regex::Product" /* Regex.framework */; };
+		OBJ_238 /* Files.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Files::Files::Product" /* Files.framework */; };
+		OBJ_248 /* Foundation+Ranges.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* Foundation+Ranges.swift */; };
+		OBJ_249 /* MatchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* MatchResult.swift */; };
+		OBJ_250 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_85 /* Options.swift */; };
+		OBJ_251 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* Regex.swift */; };
+		OBJ_252 /* String+ReplaceMatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_87 /* String+ReplaceMatching.swift */; };
+		OBJ_253 /* ThreadLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* ThreadLocal.swift */; };
+		OBJ_260 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* Package.swift */; };
+		OBJ_271 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_80 /* Package.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80C03DD82705686C005AC4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "GenStore::GenStoreCore";
+			remoteInfo = GenStoreCore;
+		};
+		80C03DD92705686C005AC4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swift-argument-parser::ArgumentParser";
+			remoteInfo = ArgumentParser;
+		};
+		80C03DDA2705686C005AC4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swift-argument-parser::ArgumentParserToolInfo";
+			remoteInfo = ArgumentParserToolInfo;
+		};
+		80C03DDB2705686C005AC4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swift-argument-parser::ArgumentParserToolInfo";
+			remoteInfo = ArgumentParserToolInfo;
+		};
+		80C03DDC2705686C005AC4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Regex::Regex";
+			remoteInfo = Regex;
+		};
+		80C03DDD2705686C005AC4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Files::Files";
+			remoteInfo = Files;
+		};
+		80C03DDE2705686C005AC4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swift-argument-parser::ArgumentParser";
+			remoteInfo = ArgumentParser;
+		};
+		80C03DDF2705686C005AC4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swift-argument-parser::ArgumentParserToolInfo";
+			remoteInfo = ArgumentParserToolInfo;
+		};
+		80C03DE02705686C005AC4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Regex::Regex";
+			remoteInfo = Regex;
+		};
+		80C03DE12705686C005AC4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Files::Files";
+			remoteInfo = Files;
+		};
+		80C03DE22705686C005AC4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "GenStore::GenStoreCore";
+			remoteInfo = GenStoreCore;
+		};
+		80C03DE32705686C005AC4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swift-argument-parser::ArgumentParser";
+			remoteInfo = ArgumentParser;
+		};
+		80C03DE42705686C005AC4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "swift-argument-parser::ArgumentParserToolInfo";
+			remoteInfo = ArgumentParserToolInfo;
+		};
+		80C03DE52705686C005AC4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Regex::Regex";
+			remoteInfo = Regex;
+		};
+		80C03DE62705686C005AC4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Files::Files";
+			remoteInfo = Files;
+		};
+		80C03DE72705686D005AC4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "GenStore::GenStoreTests";
+			remoteInfo = GenStoreTests;
+		};
+		80C03DE82705686D005AC4DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "GenStore::GenStore";
+			remoteInfo = GenStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		80C03DEA270568C3005AC4DF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				80C03DF8270568EB005AC4DF /* ColorsStoreOutput.txt in CopyFiles */,
+				80C03DF9270568EB005AC4DF /* EmptyStringStoreOutput.txt in CopyFiles */,
+				80C03DFA270568EB005AC4DF /* ImagesStoreOutput.txt in CopyFiles */,
+				80C03DFB270568EB005AC4DF /* EmptyImagesStoreOutput.txt in CopyFiles */,
+				80C03DFC270568EB005AC4DF /* EmptyColorsStoreOutput.txt in CopyFiles */,
+				80C03DFD270568EB005AC4DF /* StringStoreOutput.txt in CopyFiles */,
+				80C03DFE270568EB005AC4DF /* EmptyStringsSource.strings in CopyFiles */,
+				80C03DFF270568EB005AC4DF /* EmptyAssetsSource.xcassets in CopyFiles */,
+				80C03E00270568EB005AC4DF /* AssetsSource.xcassets in CopyFiles */,
+				80C03E01270568EB005AC4DF /* StringsSource.strings in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		80C03DED270568DD005AC4DF /* ColorsStoreOutput.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ColorsStoreOutput.txt; sourceTree = "<group>"; };
+		80C03DEE270568DD005AC4DF /* EmptyStringStoreOutput.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EmptyStringStoreOutput.txt; sourceTree = "<group>"; };
+		80C03DEF270568DD005AC4DF /* ImagesStoreOutput.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ImagesStoreOutput.txt; sourceTree = "<group>"; };
+		80C03DF0270568DD005AC4DF /* EmptyImagesStoreOutput.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EmptyImagesStoreOutput.txt; sourceTree = "<group>"; };
+		80C03DF1270568DD005AC4DF /* EmptyColorsStoreOutput.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EmptyColorsStoreOutput.txt; sourceTree = "<group>"; };
+		80C03DF2270568DD005AC4DF /* StringStoreOutput.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StringStoreOutput.txt; sourceTree = "<group>"; };
+		80C03DF4270568DD005AC4DF /* EmptyStringsSource.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = EmptyStringsSource.strings; sourceTree = "<group>"; };
+		80C03DF5270568DD005AC4DF /* EmptyAssetsSource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = EmptyAssetsSource.xcassets; sourceTree = "<group>"; };
+		80C03DF6270568DD005AC4DF /* AssetsSource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssetsSource.xcassets; sourceTree = "<group>"; };
+		80C03DF7270568DD005AC4DF /* StringsSource.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = StringsSource.strings; sourceTree = "<group>"; };
+		"Files::Files::Product" /* Files.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Files.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"GenStore::GenStore::Product" /* GenStore */ = {isa = PBXFileReference; lastKnownFileType = text; path = GenStore; sourceTree = BUILT_PRODUCTS_DIR; };
+		"GenStore::GenStoreCore::Product" /* GenStoreCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GenStoreCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"GenStore::GenStoreTests::Product" /* GenStoreTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = GenStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_101 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_102 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		OBJ_103 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_12 /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
+		OBJ_13 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		OBJ_14 /* GenStoreCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenStoreCommand.swift; sourceTree = "<group>"; };
+		OBJ_16 /* ColorsStoreGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsStoreGenerator.swift; sourceTree = "<group>"; };
+		OBJ_17 /* ImagesStoreGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesStoreGenerator.swift; sourceTree = "<group>"; };
+		OBJ_18 /* StoreGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreGenerator.swift; sourceTree = "<group>"; };
+		OBJ_19 /* StringsStoreGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsStoreGenerator.swift; sourceTree = "<group>"; };
+		OBJ_21 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		OBJ_22 /* File+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "File+Additions.swift"; sourceTree = "<group>"; };
+		OBJ_23 /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		OBJ_26 /* ArgumentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentTests.swift; sourceTree = "<group>"; };
+		OBJ_27 /* ColorsStoreGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsStoreGeneratorTests.swift; sourceTree = "<group>"; };
+		OBJ_28 /* ImagesStoreGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesStoreGeneratorTests.swift; sourceTree = "<group>"; };
+		OBJ_29 /* StoreGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreGeneratorTests.swift; sourceTree = "<group>"; };
+		OBJ_30 /* StringsStoreGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsStoreGeneratorTests.swift; sourceTree = "<group>"; };
+		OBJ_31 /* TypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTests.swift; sourceTree = "<group>"; };
+		OBJ_36 /* BashCompletionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BashCompletionsGenerator.swift; sourceTree = "<group>"; };
+		OBJ_37 /* CompletionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionsGenerator.swift; sourceTree = "<group>"; };
+		OBJ_38 /* FishCompletionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishCompletionsGenerator.swift; sourceTree = "<group>"; };
+		OBJ_39 /* ZshCompletionsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZshCompletionsGenerator.swift; sourceTree = "<group>"; };
+		OBJ_41 /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
+		OBJ_42 /* ArgumentHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentHelp.swift; sourceTree = "<group>"; };
+		OBJ_43 /* CompletionKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletionKind.swift; sourceTree = "<group>"; };
+		OBJ_44 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		OBJ_45 /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
+		OBJ_46 /* NameSpecification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameSpecification.swift; sourceTree = "<group>"; };
+		OBJ_47 /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		OBJ_48 /* OptionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionGroup.swift; sourceTree = "<group>"; };
+		OBJ_50 /* CommandConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandConfiguration.swift; sourceTree = "<group>"; };
+		OBJ_51 /* EnumerableFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumerableFlag.swift; sourceTree = "<group>"; };
+		OBJ_52 /* ExpressibleByArgument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressibleByArgument.swift; sourceTree = "<group>"; };
+		OBJ_53 /* ParsableArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableArguments.swift; sourceTree = "<group>"; };
+		OBJ_54 /* ParsableArgumentsValidation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableArgumentsValidation.swift; sourceTree = "<group>"; };
+		OBJ_55 /* ParsableCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsableCommand.swift; sourceTree = "<group>"; };
+		OBJ_57 /* ArgumentDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentDecoder.swift; sourceTree = "<group>"; };
+		OBJ_58 /* ArgumentDefinition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentDefinition.swift; sourceTree = "<group>"; };
+		OBJ_59 /* ArgumentSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentSet.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* CommandParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandParser.swift; sourceTree = "<group>"; };
+		OBJ_61 /* InputOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputOrigin.swift; sourceTree = "<group>"; };
+		OBJ_62 /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
+		OBJ_63 /* Parsed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsed.swift; sourceTree = "<group>"; };
+		OBJ_64 /* ParsedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsedValues.swift; sourceTree = "<group>"; };
+		OBJ_65 /* ParserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserError.swift; sourceTree = "<group>"; };
+		OBJ_66 /* SplitArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitArguments.swift; sourceTree = "<group>"; };
+		OBJ_68 /* DumpHelpGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumpHelpGenerator.swift; sourceTree = "<group>"; };
+		OBJ_69 /* HelpCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCommand.swift; sourceTree = "<group>"; };
+		OBJ_70 /* HelpGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpGenerator.swift; sourceTree = "<group>"; };
+		OBJ_71 /* MessageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInfo.swift; sourceTree = "<group>"; };
+		OBJ_72 /* UsageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsageGenerator.swift; sourceTree = "<group>"; };
+		OBJ_74 /* CollectionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExtensions.swift; sourceTree = "<group>"; };
+		OBJ_75 /* SequenceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequenceExtensions.swift; sourceTree = "<group>"; };
+		OBJ_76 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		OBJ_77 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		OBJ_79 /* ToolInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolInfo.swift; sourceTree = "<group>"; };
+		OBJ_80 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/garem/Documents/Projects/Scripts/GenStore-swift/.build/checkouts/swift-argument-parser/Package.swift"; sourceTree = "<group>"; };
+		OBJ_83 /* Foundation+Ranges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+Ranges.swift"; sourceTree = "<group>"; };
+		OBJ_84 /* MatchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchResult.swift; sourceTree = "<group>"; };
+		OBJ_85 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		OBJ_86 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		OBJ_87 /* String+ReplaceMatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ReplaceMatching.swift"; sourceTree = "<group>"; };
+		OBJ_88 /* ThreadLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadLocal.swift; sourceTree = "<group>"; };
+		OBJ_89 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/garem/Documents/Projects/Scripts/GenStore-swift/.build/checkouts/Regex/Package.swift"; sourceTree = "<group>"; };
+		OBJ_9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		OBJ_91 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/garem/Documents/Projects/Scripts/GenStore-swift/.build/checkouts/files/Package.swift"; sourceTree = "<group>"; };
+		OBJ_92 /* Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Files.swift; sourceTree = "<group>"; };
+		"Regex::Regex::Product" /* Regex.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Regex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ArgumentParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"swift-argument-parser::ArgumentParserToolInfo::Product" /* ArgumentParserToolInfo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ArgumentParserToolInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_146 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_147 /* ArgumentParserToolInfo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_155 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_175 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_176 /* GenStoreCore.framework in Frameworks */,
+				OBJ_177 /* ArgumentParser.framework in Frameworks */,
+				OBJ_178 /* ArgumentParserToolInfo.framework in Frameworks */,
+				OBJ_179 /* Regex.framework in Frameworks */,
+				OBJ_180 /* Files.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_202 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_203 /* ArgumentParser.framework in Frameworks */,
+				OBJ_204 /* ArgumentParserToolInfo.framework in Frameworks */,
+				OBJ_205 /* Regex.framework in Frameworks */,
+				OBJ_206 /* Files.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_233 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_234 /* GenStoreCore.framework in Frameworks */,
+				OBJ_235 /* ArgumentParser.framework in Frameworks */,
+				OBJ_236 /* ArgumentParserToolInfo.framework in Frameworks */,
+				OBJ_237 /* Regex.framework in Frameworks */,
+				OBJ_238 /* Files.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_254 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80C03DEB270568DD005AC4DF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80C03DEC270568DD005AC4DF /* Expected Outputs */,
+				80C03DF3270568DD005AC4DF /* Sources */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		80C03DEC270568DD005AC4DF /* Expected Outputs */ = {
+			isa = PBXGroup;
+			children = (
+				80C03DED270568DD005AC4DF /* ColorsStoreOutput.txt */,
+				80C03DEE270568DD005AC4DF /* EmptyStringStoreOutput.txt */,
+				80C03DEF270568DD005AC4DF /* ImagesStoreOutput.txt */,
+				80C03DF0270568DD005AC4DF /* EmptyImagesStoreOutput.txt */,
+				80C03DF1270568DD005AC4DF /* EmptyColorsStoreOutput.txt */,
+				80C03DF2270568DD005AC4DF /* StringStoreOutput.txt */,
+			);
+			path = "Expected Outputs";
+			sourceTree = "<group>";
+		};
+		80C03DF3270568DD005AC4DF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				80C03DF4270568DD005AC4DF /* EmptyStringsSource.strings */,
+				80C03DF5270568DD005AC4DF /* EmptyAssetsSource.xcassets */,
+				80C03DF6270568DD005AC4DF /* AssetsSource.xcassets */,
+				80C03DF7270568DD005AC4DF /* StringsSource.strings */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		OBJ_10 /* GenStoreCore */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_11 /* Enums */,
+				OBJ_15 /* Generators */,
+				OBJ_20 /* Helpers */,
+				OBJ_14 /* GenStoreCommand.swift */,
+			);
+			name = GenStoreCore;
+			path = Sources/GenStoreCore;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_11 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* Argument.swift */,
+				OBJ_13 /* Type.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		OBJ_15 /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* ColorsStoreGenerator.swift */,
+				OBJ_17 /* ImagesStoreGenerator.swift */,
+				OBJ_18 /* StoreGenerator.swift */,
+				OBJ_19 /* StringsStoreGenerator.swift */,
+			);
+			path = Generators;
+			sourceTree = "<group>";
+		};
+		OBJ_20 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_21 /* Constants.swift */,
+				OBJ_22 /* File+Additions.swift */,
+				OBJ_23 /* Resources.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		OBJ_24 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_25 /* GenStoreTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_25 /* GenStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				80C03DEB270568DD005AC4DF /* Resources */,
+				OBJ_26 /* ArgumentTests.swift */,
+				OBJ_27 /* ColorsStoreGeneratorTests.swift */,
+				OBJ_28 /* ImagesStoreGeneratorTests.swift */,
+				OBJ_29 /* StoreGeneratorTests.swift */,
+				OBJ_30 /* StringsStoreGeneratorTests.swift */,
+				OBJ_31 /* TypeTests.swift */,
+			);
+			name = GenStoreTests;
+			path = Tests/GenStoreTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_32 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_33 /* swift-argument-parser 1.0.1 */,
+				OBJ_81 /* Regex 2.1.1 */,
+				OBJ_90 /* Files 4.1.1 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_33 /* swift-argument-parser 1.0.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_34 /* ArgumentParser */,
+				OBJ_78 /* ArgumentParserToolInfo */,
+				OBJ_80 /* Package.swift */,
+			);
+			name = "swift-argument-parser 1.0.1";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_34 /* ArgumentParser */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_35 /* Completions */,
+				OBJ_40 /* Parsable Properties */,
+				OBJ_49 /* Parsable Types */,
+				OBJ_56 /* Parsing */,
+				OBJ_67 /* Usage */,
+				OBJ_73 /* Utilities */,
+			);
+			name = ArgumentParser;
+			path = ".build/checkouts/swift-argument-parser/Sources/ArgumentParser";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_35 /* Completions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_36 /* BashCompletionsGenerator.swift */,
+				OBJ_37 /* CompletionsGenerator.swift */,
+				OBJ_38 /* FishCompletionsGenerator.swift */,
+				OBJ_39 /* ZshCompletionsGenerator.swift */,
+			);
+			path = Completions;
+			sourceTree = "<group>";
+		};
+		OBJ_40 /* Parsable Properties */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_41 /* Argument.swift */,
+				OBJ_42 /* ArgumentHelp.swift */,
+				OBJ_43 /* CompletionKind.swift */,
+				OBJ_44 /* Errors.swift */,
+				OBJ_45 /* Flag.swift */,
+				OBJ_46 /* NameSpecification.swift */,
+				OBJ_47 /* Option.swift */,
+				OBJ_48 /* OptionGroup.swift */,
+			);
+			path = "Parsable Properties";
+			sourceTree = "<group>";
+		};
+		OBJ_49 /* Parsable Types */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_50 /* CommandConfiguration.swift */,
+				OBJ_51 /* EnumerableFlag.swift */,
+				OBJ_52 /* ExpressibleByArgument.swift */,
+				OBJ_53 /* ParsableArguments.swift */,
+				OBJ_54 /* ParsableArgumentsValidation.swift */,
+				OBJ_55 /* ParsableCommand.swift */,
+			);
+			path = "Parsable Types";
+			sourceTree = "<group>";
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_24 /* Tests */,
+				OBJ_32 /* Dependencies */,
+				OBJ_93 /* Products */,
+				OBJ_101 /* LICENSE */,
+				OBJ_102 /* Makefile */,
+				OBJ_103 /* README.md */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_56 /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_57 /* ArgumentDecoder.swift */,
+				OBJ_58 /* ArgumentDefinition.swift */,
+				OBJ_59 /* ArgumentSet.swift */,
+				OBJ_60 /* CommandParser.swift */,
+				OBJ_61 /* InputOrigin.swift */,
+				OBJ_62 /* Name.swift */,
+				OBJ_63 /* Parsed.swift */,
+				OBJ_64 /* ParsedValues.swift */,
+				OBJ_65 /* ParserError.swift */,
+				OBJ_66 /* SplitArguments.swift */,
+			);
+			path = Parsing;
+			sourceTree = "<group>";
+		};
+		OBJ_67 /* Usage */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_68 /* DumpHelpGenerator.swift */,
+				OBJ_69 /* HelpCommand.swift */,
+				OBJ_70 /* HelpGenerator.swift */,
+				OBJ_71 /* MessageInfo.swift */,
+				OBJ_72 /* UsageGenerator.swift */,
+			);
+			path = Usage;
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* GenStore */,
+				OBJ_10 /* GenStoreCore */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_73 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_74 /* CollectionExtensions.swift */,
+				OBJ_75 /* SequenceExtensions.swift */,
+				OBJ_76 /* StringExtensions.swift */,
+				OBJ_77 /* Tree.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		OBJ_78 /* ArgumentParserToolInfo */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_79 /* ToolInfo.swift */,
+			);
+			name = ArgumentParserToolInfo;
+			path = ".build/checkouts/swift-argument-parser/Sources/ArgumentParserToolInfo";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* GenStore */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* main.swift */,
+			);
+			name = GenStore;
+			path = Sources/GenStore;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_81 /* Regex 2.1.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_82 /* Regex */,
+				OBJ_89 /* Package.swift */,
+			);
+			name = "Regex 2.1.1";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_82 /* Regex */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_83 /* Foundation+Ranges.swift */,
+				OBJ_84 /* MatchResult.swift */,
+				OBJ_85 /* Options.swift */,
+				OBJ_86 /* Regex.swift */,
+				OBJ_87 /* String+ReplaceMatching.swift */,
+				OBJ_88 /* ThreadLocal.swift */,
+			);
+			name = Regex;
+			path = .build/checkouts/Regex/Source/Regex;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_90 /* Files 4.1.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_91 /* Package.swift */,
+				OBJ_92 /* Files.swift */,
+			);
+			name = "Files 4.1.1";
+			path = .build/checkouts/files/Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */,
+				"swift-argument-parser::ArgumentParserToolInfo::Product" /* ArgumentParserToolInfo.framework */,
+				"Files::Files::Product" /* Files.framework */,
+				"GenStore::GenStore::Product" /* GenStore */,
+				"GenStore::GenStoreCore::Product" /* GenStoreCore.framework */,
+				"GenStore::GenStoreTests::Product" /* GenStoreTests.xctest */,
+				"Regex::Regex::Product" /* Regex.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Files::Files" /* Files */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_157 /* Build configuration list for PBXNativeTarget "Files" */;
+			buildPhases = (
+				OBJ_160 /* Sources */,
+				OBJ_162 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Files;
+			productName = Files;
+			productReference = "Files::Files::Product" /* Files.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Files::SwiftPMPackageDescription" /* FilesPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_164 /* Build configuration list for PBXNativeTarget "FilesPackageDescription" */;
+			buildPhases = (
+				OBJ_167 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FilesPackageDescription;
+			productName = FilesPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"GenStore::GenStore" /* GenStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_170 /* Build configuration list for PBXNativeTarget "GenStore" */;
+			buildPhases = (
+				OBJ_173 /* Sources */,
+				OBJ_175 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_181 /* PBXTargetDependency */,
+				OBJ_183 /* PBXTargetDependency */,
+				OBJ_184 /* PBXTargetDependency */,
+				OBJ_185 /* PBXTargetDependency */,
+				OBJ_187 /* PBXTargetDependency */,
+			);
+			name = GenStore;
+			productName = GenStore;
+			productReference = "GenStore::GenStore::Product" /* GenStore */;
+			productType = "com.apple.product-type.tool";
+		};
+		"GenStore::GenStoreCore" /* GenStoreCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_188 /* Build configuration list for PBXNativeTarget "GenStoreCore" */;
+			buildPhases = (
+				OBJ_191 /* Sources */,
+				OBJ_202 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_207 /* PBXTargetDependency */,
+				OBJ_208 /* PBXTargetDependency */,
+				OBJ_209 /* PBXTargetDependency */,
+				OBJ_210 /* PBXTargetDependency */,
+			);
+			name = GenStoreCore;
+			productName = GenStoreCore;
+			productReference = "GenStore::GenStoreCore::Product" /* GenStoreCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"GenStore::GenStoreTests" /* GenStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_223 /* Build configuration list for PBXNativeTarget "GenStoreTests" */;
+			buildPhases = (
+				OBJ_226 /* Sources */,
+				OBJ_233 /* Frameworks */,
+				80C03DEA270568C3005AC4DF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_239 /* PBXTargetDependency */,
+				OBJ_240 /* PBXTargetDependency */,
+				OBJ_241 /* PBXTargetDependency */,
+				OBJ_242 /* PBXTargetDependency */,
+				OBJ_243 /* PBXTargetDependency */,
+			);
+			name = GenStoreTests;
+			productName = GenStoreTests;
+			productReference = "GenStore::GenStoreTests::Product" /* GenStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"GenStore::SwiftPMPackageDescription" /* GenStorePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_212 /* Build configuration list for PBXNativeTarget "GenStorePackageDescription" */;
+			buildPhases = (
+				OBJ_215 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenStorePackageDescription;
+			productName = GenStorePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"Regex::Regex" /* Regex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_244 /* Build configuration list for PBXNativeTarget "Regex" */;
+			buildPhases = (
+				OBJ_247 /* Sources */,
+				OBJ_254 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Regex;
+			productName = Regex;
+			productReference = "Regex::Regex::Product" /* Regex.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Regex::SwiftPMPackageDescription" /* RegexPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_256 /* Build configuration list for PBXNativeTarget "RegexPackageDescription" */;
+			buildPhases = (
+				OBJ_259 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RegexPackageDescription;
+			productName = RegexPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"swift-argument-parser::ArgumentParser" /* ArgumentParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_105 /* Build configuration list for PBXNativeTarget "ArgumentParser" */;
+			buildPhases = (
+				OBJ_108 /* Sources */,
+				OBJ_146 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_148 /* PBXTargetDependency */,
+			);
+			name = ArgumentParser;
+			productName = ArgumentParser;
+			productReference = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"swift-argument-parser::ArgumentParserToolInfo" /* ArgumentParserToolInfo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_150 /* Build configuration list for PBXNativeTarget "ArgumentParserToolInfo" */;
+			buildPhases = (
+				OBJ_153 /* Sources */,
+				OBJ_155 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArgumentParserToolInfo;
+			productName = ArgumentParserToolInfo;
+			productReference = "swift-argument-parser::ArgumentParserToolInfo::Product" /* ArgumentParserToolInfo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"swift-argument-parser::SwiftPMPackageDescription" /* swift-argument-parserPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_267 /* Build configuration list for PBXNativeTarget "swift-argument-parserPackageDescription" */;
+			buildPhases = (
+				OBJ_270 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-argument-parserPackageDescription";
+			productName = "swift-argument-parserPackageDescription";
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "GenStore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"swift-argument-parser::ArgumentParser" /* ArgumentParser */,
+				"swift-argument-parser::ArgumentParserToolInfo" /* ArgumentParserToolInfo */,
+				"Files::Files" /* Files */,
+				"Files::SwiftPMPackageDescription" /* FilesPackageDescription */,
+				"GenStore::GenStore" /* GenStore */,
+				"GenStore::GenStoreCore" /* GenStoreCore */,
+				"GenStore::SwiftPMPackageDescription" /* GenStorePackageDescription */,
+				"GenStore::GenStorePackageTests::ProductTarget" /* GenStorePackageTests */,
+				"GenStore::GenStoreTests" /* GenStoreTests */,
+				"Regex::Regex" /* Regex */,
+				"Regex::SwiftPMPackageDescription" /* RegexPackageDescription */,
+				"GenStore::gen-store::ProductTarget" /* gen-store */,
+				"swift-argument-parser::SwiftPMPackageDescription" /* swift-argument-parserPackageDescription */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_109 /* BashCompletionsGenerator.swift in Sources */,
+				OBJ_110 /* CompletionsGenerator.swift in Sources */,
+				OBJ_111 /* FishCompletionsGenerator.swift in Sources */,
+				OBJ_112 /* ZshCompletionsGenerator.swift in Sources */,
+				OBJ_113 /* Argument.swift in Sources */,
+				OBJ_114 /* ArgumentHelp.swift in Sources */,
+				OBJ_115 /* CompletionKind.swift in Sources */,
+				OBJ_116 /* Errors.swift in Sources */,
+				OBJ_117 /* Flag.swift in Sources */,
+				OBJ_118 /* NameSpecification.swift in Sources */,
+				OBJ_119 /* Option.swift in Sources */,
+				OBJ_120 /* OptionGroup.swift in Sources */,
+				OBJ_121 /* CommandConfiguration.swift in Sources */,
+				OBJ_122 /* EnumerableFlag.swift in Sources */,
+				OBJ_123 /* ExpressibleByArgument.swift in Sources */,
+				OBJ_124 /* ParsableArguments.swift in Sources */,
+				OBJ_125 /* ParsableArgumentsValidation.swift in Sources */,
+				OBJ_126 /* ParsableCommand.swift in Sources */,
+				OBJ_127 /* ArgumentDecoder.swift in Sources */,
+				OBJ_128 /* ArgumentDefinition.swift in Sources */,
+				OBJ_129 /* ArgumentSet.swift in Sources */,
+				OBJ_130 /* CommandParser.swift in Sources */,
+				OBJ_131 /* InputOrigin.swift in Sources */,
+				OBJ_132 /* Name.swift in Sources */,
+				OBJ_133 /* Parsed.swift in Sources */,
+				OBJ_134 /* ParsedValues.swift in Sources */,
+				OBJ_135 /* ParserError.swift in Sources */,
+				OBJ_136 /* SplitArguments.swift in Sources */,
+				OBJ_137 /* DumpHelpGenerator.swift in Sources */,
+				OBJ_138 /* HelpCommand.swift in Sources */,
+				OBJ_139 /* HelpGenerator.swift in Sources */,
+				OBJ_140 /* MessageInfo.swift in Sources */,
+				OBJ_141 /* UsageGenerator.swift in Sources */,
+				OBJ_142 /* CollectionExtensions.swift in Sources */,
+				OBJ_143 /* SequenceExtensions.swift in Sources */,
+				OBJ_144 /* StringExtensions.swift in Sources */,
+				OBJ_145 /* Tree.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_154 /* ToolInfo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_161 /* Files.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_167 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_168 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_174 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_191 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_192 /* Argument.swift in Sources */,
+				OBJ_193 /* Type.swift in Sources */,
+				OBJ_195 /* ColorsStoreGenerator.swift in Sources */,
+				OBJ_196 /* ImagesStoreGenerator.swift in Sources */,
+				OBJ_197 /* StoreGenerator.swift in Sources */,
+				OBJ_198 /* StringsStoreGenerator.swift in Sources */,
+				OBJ_199 /* Constants.swift in Sources */,
+				OBJ_200 /* File+Additions.swift in Sources */,
+				80C03E0227056906005AC4DF /* GenStoreCommand.swift in Sources */,
+				OBJ_201 /* Resources.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_216 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_226 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_227 /* ArgumentTests.swift in Sources */,
+				OBJ_228 /* ColorsStoreGeneratorTests.swift in Sources */,
+				OBJ_229 /* ImagesStoreGeneratorTests.swift in Sources */,
+				OBJ_230 /* StoreGeneratorTests.swift in Sources */,
+				OBJ_231 /* StringsStoreGeneratorTests.swift in Sources */,
+				OBJ_232 /* TypeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_248 /* Foundation+Ranges.swift in Sources */,
+				OBJ_249 /* MatchResult.swift in Sources */,
+				OBJ_250 /* Options.swift in Sources */,
+				OBJ_251 /* Regex.swift in Sources */,
+				OBJ_252 /* String+ReplaceMatching.swift in Sources */,
+				OBJ_253 /* ThreadLocal.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_259 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_260 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_271 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_148 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-argument-parser::ArgumentParserToolInfo" /* ArgumentParserToolInfo */;
+			targetProxy = 80C03DDA2705686C005AC4DF /* PBXContainerItemProxy */;
+		};
+		OBJ_181 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "GenStore::GenStoreCore" /* GenStoreCore */;
+			targetProxy = 80C03DD82705686C005AC4DF /* PBXContainerItemProxy */;
+		};
+		OBJ_183 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-argument-parser::ArgumentParser" /* ArgumentParser */;
+			targetProxy = 80C03DDE2705686C005AC4DF /* PBXContainerItemProxy */;
+		};
+		OBJ_184 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-argument-parser::ArgumentParserToolInfo" /* ArgumentParserToolInfo */;
+			targetProxy = 80C03DDF2705686C005AC4DF /* PBXContainerItemProxy */;
+		};
+		OBJ_185 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Regex::Regex" /* Regex */;
+			targetProxy = 80C03DE02705686C005AC4DF /* PBXContainerItemProxy */;
+		};
+		OBJ_187 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Files::Files" /* Files */;
+			targetProxy = 80C03DE12705686C005AC4DF /* PBXContainerItemProxy */;
+		};
+		OBJ_207 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-argument-parser::ArgumentParser" /* ArgumentParser */;
+			targetProxy = 80C03DD92705686C005AC4DF /* PBXContainerItemProxy */;
+		};
+		OBJ_208 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-argument-parser::ArgumentParserToolInfo" /* ArgumentParserToolInfo */;
+			targetProxy = 80C03DDB2705686C005AC4DF /* PBXContainerItemProxy */;
+		};
+		OBJ_209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Regex::Regex" /* Regex */;
+			targetProxy = 80C03DDC2705686C005AC4DF /* PBXContainerItemProxy */;
+		};
+		OBJ_210 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Files::Files" /* Files */;
+			targetProxy = 80C03DDD2705686C005AC4DF /* PBXContainerItemProxy */;
+		};
+		OBJ_221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "GenStore::GenStoreTests" /* GenStoreTests */;
+			targetProxy = 80C03DE72705686D005AC4DF /* PBXContainerItemProxy */;
+		};
+		OBJ_239 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "GenStore::GenStoreCore" /* GenStoreCore */;
+			targetProxy = 80C03DE22705686C005AC4DF /* PBXContainerItemProxy */;
+		};
+		OBJ_240 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-argument-parser::ArgumentParser" /* ArgumentParser */;
+			targetProxy = 80C03DE32705686C005AC4DF /* PBXContainerItemProxy */;
+		};
+		OBJ_241 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "swift-argument-parser::ArgumentParserToolInfo" /* ArgumentParserToolInfo */;
+			targetProxy = 80C03DE42705686C005AC4DF /* PBXContainerItemProxy */;
+		};
+		OBJ_242 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Regex::Regex" /* Regex */;
+			targetProxy = 80C03DE52705686C005AC4DF /* PBXContainerItemProxy */;
+		};
+		OBJ_243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Files::Files" /* Files */;
+			targetProxy = 80C03DE62705686C005AC4DF /* PBXContainerItemProxy */;
+		};
+		OBJ_265 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "GenStore::GenStore" /* GenStore */;
+			targetProxy = 80C03DE82705686D005AC4DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_106 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GenStore.xcodeproj/ArgumentParser_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ArgumentParser;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ArgumentParser;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_107 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GenStore.xcodeproj/ArgumentParser_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ArgumentParser;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ArgumentParser;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_151 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GenStore.xcodeproj/ArgumentParserToolInfo_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ArgumentParserToolInfo;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ArgumentParserToolInfo;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GenStore.xcodeproj/ArgumentParserToolInfo_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ArgumentParserToolInfo;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ArgumentParserToolInfo;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GenStore.xcodeproj/Files_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Files;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Files;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GenStore.xcodeproj/Files_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Files;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Files;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GenStore.xcodeproj/GenStore_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = GenStore;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GenStore.xcodeproj/GenStore_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = GenStore;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GenStore.xcodeproj/GenStoreCore_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = GenStoreCore;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = GenStoreCore;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GenStore.xcodeproj/GenStoreCore_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = GenStoreCore;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = GenStoreCore;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.1.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.1.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_224 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GenStore.xcodeproj/GenStoreTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = GenStoreTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		OBJ_225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GenStore.xcodeproj/GenStoreTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = GenStoreTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		OBJ_245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GenStore.xcodeproj/Regex_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Regex;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Regex;
+			};
+			name = Debug;
+		};
+		OBJ_246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GenStore.xcodeproj/Regex_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Regex;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Regex;
+			};
+			name = Release;
+		};
+		OBJ_257 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 4.2.0";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		OBJ_258 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 4.2.0";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		OBJ_263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_264 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_268 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.3.sdk -package-description-version 5.2.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_105 /* Build configuration list for PBXNativeTarget "ArgumentParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_106 /* Debug */,
+				OBJ_107 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_150 /* Build configuration list for PBXNativeTarget "ArgumentParserToolInfo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_151 /* Debug */,
+				OBJ_152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_157 /* Build configuration list for PBXNativeTarget "Files" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_158 /* Debug */,
+				OBJ_159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_164 /* Build configuration list for PBXNativeTarget "FilesPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_165 /* Debug */,
+				OBJ_166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_170 /* Build configuration list for PBXNativeTarget "GenStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_171 /* Debug */,
+				OBJ_172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_188 /* Build configuration list for PBXNativeTarget "GenStoreCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_189 /* Debug */,
+				OBJ_190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "GenStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_212 /* Build configuration list for PBXNativeTarget "GenStorePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_213 /* Debug */,
+				OBJ_214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_218 /* Build configuration list for PBXAggregateTarget "GenStorePackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_219 /* Debug */,
+				OBJ_220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_223 /* Build configuration list for PBXNativeTarget "GenStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_224 /* Debug */,
+				OBJ_225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_244 /* Build configuration list for PBXNativeTarget "Regex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_245 /* Debug */,
+				OBJ_246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_256 /* Build configuration list for PBXNativeTarget "RegexPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_257 /* Debug */,
+				OBJ_258 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_262 /* Build configuration list for PBXAggregateTarget "gen-store" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_263 /* Debug */,
+				OBJ_264 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_267 /* Build configuration list for PBXNativeTarget "swift-argument-parserPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_268 /* Debug */,
+				OBJ_269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
