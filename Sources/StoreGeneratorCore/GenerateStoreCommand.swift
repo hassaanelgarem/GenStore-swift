@@ -12,21 +12,44 @@ public struct GenerateStoreCommand: ParsableCommand {
     
     public init() { }
     
-    public static var configuration = CommandConfiguration(commandName: "gen-store", abstract: "Abstract TBD", discussion: "Discussion TBD", version: "1.0.0")
+    public static var configuration = CommandConfiguration(
+        commandName: Constants.commandName,
+        abstract: Constants.commandAbstract,
+        discussion: Constants.commandDiscussion,
+        version: Constants.commandVersion)
 
-    @Option(name: .shortAndLong, help: ArgumentHelp("Type of the store being generated", discussion: "Choose one of the following supported types:\(Type.allTypesString)"))
+    @Option(name: .shortAndLong, help: .typeHelp)
     var type: String
     
-    @Option(name: .shortAndLong, help: ArgumentHelp("Path of the source used to generate the store", discussion: "In case of generating a strings store, source should be a .strings file. In case of generating a colors or images store, source should be a .xcassets file"))
+    @Option(name: .shortAndLong, help: .sourceHelp)
     var source: String
     
-    @Option(name: .shortAndLong, help: ArgumentHelp("Path of the output file", discussion: "If a file already exist at this path, it will be overridden, else a new file will be created if possible"))
+    @Option(name: .shortAndLong, help: .outputHelp)
     var output: String
 
     public mutating func run() throws {
         let storeGenerator = StoreGenerator(type: type, source: source, output: output)
         try storeGenerator.run()
     }
+}
+
+extension ArgumentHelp {
+    
+    static var typeHelp: ArgumentHelp {
+        return ArgumentHelp(Constants.typeOptionHelp,
+                            discussion: Constants.typeOptionDiscussion)
+    }
+    
+    static var sourceHelp: ArgumentHelp {
+        return ArgumentHelp(Constants.sourceOptionHelp,
+                            discussion: Constants.sourceOptionDiscussion)
+    }
+    
+    static var outputHelp: ArgumentHelp {
+        return ArgumentHelp(Constants.outputOptionHelp,
+                            discussion: Constants.outputOptionDiscussion)
+    }
+    
 }
 
 extension Type: ExpressibleByArgument { }

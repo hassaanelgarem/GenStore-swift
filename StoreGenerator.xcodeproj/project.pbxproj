@@ -33,6 +33,7 @@
 		808F11682702B8C4006E41A2 /* AssetsSource.xcassets in CopyFiles */ = {isa = PBXBuildFile; fileRef = 808F115D2702B8AA006E41A2 /* AssetsSource.xcassets */; };
 		808F11692702B8C4006E41A2 /* StringsSource.strings in CopyFiles */ = {isa = PBXBuildFile; fileRef = 808F115E2702B8AA006E41A2 /* StringsSource.strings */; };
 		808F116B2702BBC2006E41A2 /* StoreGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808F116A2702BBC2006E41A2 /* StoreGeneratorTests.swift */; };
+		80BD20732705582600976B33 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BD20722705582600976B33 /* Constants.swift */; };
 		OBJ_105 /* BashCompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* BashCompletionsGenerator.swift */; };
 		OBJ_106 /* CompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* CompletionsGenerator.swift */; };
 		OBJ_107 /* FishCompletionsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* FishCompletionsGenerator.swift */; };
@@ -263,6 +264,7 @@
 		808F115D2702B8AA006E41A2 /* AssetsSource.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssetsSource.xcassets; sourceTree = "<group>"; };
 		808F115E2702B8AA006E41A2 /* StringsSource.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = StringsSource.strings; sourceTree = "<group>"; };
 		808F116A2702BBC2006E41A2 /* StoreGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreGeneratorTests.swift; sourceTree = "<group>"; };
+		80BD20722705582600976B33 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		"Files::Files::Product" /* Files.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Files.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* Argument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argument.swift; sourceTree = "<group>"; };
 		OBJ_13 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
@@ -474,6 +476,7 @@
 			children = (
 				OBJ_19 /* File+Additions.swift */,
 				OBJ_20 /* Resources.swift */,
+				80BD20722705582600976B33 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -574,7 +577,7 @@
 			path = "Parsable Types";
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -584,7 +587,6 @@
 				OBJ_91 /* Products */,
 				OBJ_99 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_54 /* Parsing */ = {
@@ -904,7 +906,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_91 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1032,6 +1034,7 @@
 				OBJ_206 /* Type.swift in Sources */,
 				OBJ_207 /* ColorsStoreGenerator.swift in Sources */,
 				OBJ_208 /* ImagesStoreGenerator.swift in Sources */,
+				80BD20732705582600976B33 /* Constants.swift in Sources */,
 				OBJ_209 /* StringsStoreGenerator.swift in Sources */,
 				OBJ_210 /* File+Additions.swift in Sources */,
 				OBJ_211 /* Resources.swift in Sources */,
