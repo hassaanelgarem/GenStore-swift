@@ -87,7 +87,7 @@ $ gen-store --type colors --source Colors.xcasseets --output ColorsStore.swift
 
 Given the following `Colors.xcasseets` file:
 
-![Screen Shot 2021-09-29 at 4.31.30 AM.png](Store%20Generator%20README%2028f55e72b08a41008b04962059316f74/Screen_Shot_2021-09-29_at_4.31.30_AM.png)
+<img width="50%" alt="Colors xcasseets" src="https://user-images.githubusercontent.com/25306722/135378420-6b8789ea-6eae-464d-8028-143e80e23af5.png">
 
 The generated code will look like this:
 
@@ -128,7 +128,7 @@ $ gen-store --type images --source Images.xcasseets --output ImagesStore.swift
 
 Given the following `Images.xcasseets` file:
 
-![Screen Shot 2021-09-29 at 4.36.33 AM.png](Store%20Generator%20README%2028f55e72b08a41008b04962059316f74/Screen_Shot_2021-09-29_at_4.36.33_AM.png)
+<img width="50%" alt="Images xcasseets" src="https://user-images.githubusercontent.com/25306722/135378456-8872f6ae-09ee-4d22-b52c-5f990e94a9ca.png">
 
 The generated code will look like this:
 
