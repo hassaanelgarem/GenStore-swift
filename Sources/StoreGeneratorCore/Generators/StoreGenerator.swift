@@ -61,5 +61,5 @@ final class StoreGenerator {
 extension ValidationError {
     static var invalidSourcePath = ValidationError("Could not find a valid source at the provided path")
     static var invalidOutputPath = ValidationError("Could not create or find the output file")
-    static var invalidType = ValidationError("The type passed is invalid\nChoose one of the following supported types:\(Type.allTypesString)")
+    static var invalidType = ValidationError("The type passed is invalid\nChoose one of the following supported types: \(Type.allTypesString)")
 }

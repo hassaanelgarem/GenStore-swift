@@ -51,6 +51,6 @@ class TypeTests: XCTestCase {
         let allTypes = Type.allTypesString
         
         // Then
-        XCTAssertEqual(allTypes, "\ncolors\nimages\nstrings")
+        XCTAssertEqual(allTypes, "[colors, images, strings]")
     }
 }

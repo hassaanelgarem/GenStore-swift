@@ -24,11 +24,8 @@ enum Type: String {
     }
     
     static var allTypesString: String {
-        var string = ""
-        for type in allCases {
-            string += "\n\(type.rawValue)"
-        }
-        return string
+        let allTypes = allCases.map {$0.rawValue}.joined(separator: ", ")
+        return "[\(allTypes)]"
     }
 }
 

@@ -35,7 +35,7 @@ class StoreGeneratorTests: XCTestCase {
                 XCTFail("Error is of wrong type")
                 return
             }
-            XCTAssertEqual(error.message, "The type passed is invalid\nChoose one of the following supported types:\ncolors\nimages\nstrings")
+            XCTAssertEqual(error.message, "The type passed is invalid\nChoose one of the following supported types: [colors, images, strings]")
         }
     }
     

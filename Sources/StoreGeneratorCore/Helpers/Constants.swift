@@ -19,7 +19,7 @@ class Constants {
     // MARK:- Command Options
     
     static let typeOptionHelp = "Type of the store being generated"
-    static let typeOptionDiscussion = "Choose one of the following supported types:\(Type.allTypesString)"
+    static let typeOptionDiscussion = "Choose one of the following supported types: \(Type.allTypesString)"
     static let sourceOptionHelp = "Path of the source used to generate the store"
     static let sourceOptionDiscussion = "In case of generating a strings store, source should be a .strings file. In case of generating a colors or images store, source should be a .xcassets file"
     static let outputOptionHelp = "Path of the output file"
