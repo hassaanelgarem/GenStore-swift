@@ -176,4 +176,4 @@ If GenStoreSwift doesn't meet your needs try [SwiftGen](https://github.com/Swift
 
 ## License
 
-GenStoreSwift is licensed under the MIT license. See LICENSE for more info.
+GenStoreSwift is licensed under the MIT license. See [LICENSE](LICENSE) for more info.
