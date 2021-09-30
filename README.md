@@ -46,7 +46,7 @@ $ gen-store --type strings --source Localizable.strings --output StringsStore.sw
 
 Given the following `Localizable.strings` file:
 
-```
+```swift
 "jim" = "Bears. Beets. Battlestar Galactica.";
 "dwight" = "Identity theft is not a joke, Jim!";
 ```
