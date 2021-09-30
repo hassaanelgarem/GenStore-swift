@@ -56,8 +56,8 @@ The generated code will look like this:
 ```swift
 class StringsStore {
 
-	static let jim = "jim".localized
-	static let dwight = "dwight".localized
+    static let jim = "jim".localized
+    static let dwight = "dwight".localized
 
 }
 
@@ -96,9 +96,9 @@ The generated code will look like this:
 ```swift
 class ColorsStore {
 
-	static let dijonMustard: UIColor = Self.unwrappedColor(named: "dijonMustard")
-	static let spicyBrown: UIColor = Self.unwrappedColor(named: "spicyBrown")
-	static let yellowMustard: UIColor = Self.unwrappedColor(named: "yellowMustard")
+    static let dijonMustard: UIColor = Self.unwrappedColor(named: "dijonMustard")
+    static let spicyBrown: UIColor = Self.unwrappedColor(named: "spicyBrown")
+    static let yellowMustard: UIColor = Self.unwrappedColor(named: "yellowMustard")
 
     static func unwrappedColor(named name: String) -> UIColor {
         guard let color = UIColor(named: name) else {
@@ -137,8 +137,8 @@ The generated code will look like this:
 ```swift
 class ImagesStore {
 
-	static let babiesPoster: UIImage? = UIImage(named: "babiesPoster")
-	static let chairModel: UIImage? = UIImage(named: "chairModel")
+    static let babiesPoster: UIImage? = UIImage(named: "babiesPoster")
+    static let chairModel: UIImage? = UIImage(named: "chairModel")
 
 }
 ```
