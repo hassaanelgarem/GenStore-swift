@@ -51,6 +51,7 @@ import UIKit
 class ImagesStore {
 
 {data}
+
 }
 
 """

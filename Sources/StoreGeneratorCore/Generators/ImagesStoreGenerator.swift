@@ -15,12 +15,10 @@ class ImagesStoreGenerator: Generator {
     func generateStore(sourceFilePath: String, outputFilePath: String) throws {
         let imageVariables = try getImages(sourceFilePath: sourceFilePath).map({ (imageName) -> String in
             return """
-            \tstatic var \(imageName): UIImage? {
-            \t\treturn UIImage(named: "\(imageName)")
-            \t}
+            \tstatic let \(imageName): UIImage? = UIImage(named: "\(imageName)")
             """
         })
-        let string = imageVariables.joined(separator: "\n\n")
+        let string = imageVariables.joined(separator: "\n")
         
         let storeFile = try File.getOrCreateFile(path: outputFilePath)
         var storeContent = Resources.imagesTemplate

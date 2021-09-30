@@ -4,11 +4,7 @@ import UIKit
 
 class ImagesStore {
 
-\tstatic var imageOne: UIImage? {
-\t\treturn UIImage(named: "imageOne")
-\t}
+\tstatic let imageOne: UIImage? = UIImage(named: "imageOne")
+\tstatic let imageTwo: UIImage? = UIImage(named: "imageTwo")
 
-\tstatic var imageTwo: UIImage? {
-\t\treturn UIImage(named: "imageTwo")
-\t}
 }

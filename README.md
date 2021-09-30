@@ -135,13 +135,9 @@ The generated code will look like this:
 ```swift
 class ImagesStore {
 
-	static var babiesPoster: UIImage? {
-		return UIImage(named: "babiesPoster")
-	}
+	static let babiesPoster: UIImage? = UIImage(named: "babiesPoster")
+	static let chairModel: UIImage? = UIImage(named: "chairModel")
 
-	static var chairModel: UIImage? {
-		return UIImage(named: "chairModel")
-	}
 }
 ```
 
