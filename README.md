@@ -15,7 +15,9 @@ $ mint install hassaanelgarem/GenStore-swift
 ### From Source
 
 ```shell
-Update after implementing
+$ git clone https://github.com/hassaanelgarem/GenStore-swift
+$ cd GenStore-swift
+$ make
 ```
 
 ## Usage
